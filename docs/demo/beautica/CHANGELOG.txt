@@ -1,0 +1,38 @@
+Beautica — Beauty Salon Website Template
+========================================
+
+Version 2.0 — 2026
+-------------------
+
+- Rebuilt on Bootstrap 5 with every behaviour in plain JavaScript (js/main.js):
+  the menu, sticky header, hero and testimonial carousels, photo hover swaps,
+  search and back-to-top need no other library.
+- Seven new pages: online booking (treatment, stylist, date and time, your
+  details and a live summary), a price list with a search box and topic
+  filters, a service detail page, products and gift cards with an enquiry
+  form, a stylist profile, a privacy policy and a 404 page.
+- Four ready-to-send HTML emails: booking confirmation, contact reply,
+  newsletter welcome and product enquiry reply.
+- The home page booking band is now a labelled booking panel; the hero
+  slides carry a caption with Book now and Price list buttons; each service
+  card shows its price and duration with Details and Book buttons.
+- Every inner page opens with a photo banner, title, intro line and
+  breadcrumb. About gains our story and a call to action; Services gains a
+  treatment menu, visit steps and an FAQ; Gallery gains topic filters; the
+  blog gains topics, a newsletter band, an author box and a redesigned
+  comment section; Contact gains opening hours and a click-to-load map.
+- The header search opens full screen on every device and lands on the
+  price list with the results filtered.
+- Every form has labels, validates and confirms; placeholders are readable
+  on light forms.
+- Real copy for a salon in place of the lorem-ipsum blocks, one address
+  site-wide, working contact and social links, and a meta description on
+  every page.
+- A refreshed look that keeps the gold and navy identity: pill buttons,
+  rounded cards with soft shadows, a sliding sticky header and a readable
+  green service card (one css file, css/_modern.css, removable).
+- Phone and tablet: the menu fits on one row on tablets, the footer shows
+  two by two, grids show two columns on tablet, the four counters sit two
+  by two on phones, and nothing scrolls sideways from 320px up.
+- Each page now highlights its own item in the footer links.
+- Fonts self-hosted; Font Awesome 4 -> 6.

@@ -1,0 +1,110 @@
+Beautilicious — Spa and Beauty Salon HTML Template
+==================================================
+
+Version 2.0 — 2026
+------------------
+
+A rebuild on a modern stack, five pages the site needed but never had, a
+blog with a working search, an appointment confirmation email, and a
+modernised home page in the template's own colours: charcoal, white and
+gold.
+
+
+FIVE NEW PAGES AND AN EMAIL
+- service-details.html — the page behind every service circle and tile:
+  the treatment, what it includes, what to know before you come, a
+  before-and-after pair, and a booking card with duration, price,
+  therapist and room, "Book an appointment" and "See all prices".
+- team-member.html — a profile behind every team photo: photo, role,
+  facts (with us since, specialities, languages, hours), social links,
+  the story, the treatments they do with prices, certifications, and
+  the rest of the team.
+- prices.html — the salon's price list: Hair, Face, Nails and Spa, each
+  line with its duration and price and linked to the treatment, plus
+  three packages (Half day, Full day, Bridal party).
+- appointment.html — the booking form on its own page: treatment,
+  stylist, date, time, name, phone, email, first visit, notes; validates
+  and confirms; "What happens next" in three steps.
+- 404.html — a not-found page in the template's design with four ways
+  back in.
+- email-appointment.html — the confirmation a client gets after booking:
+  the logo bar and photograph, the booking card (treatment, with, date,
+  time, price), three "before you come" steps, "Add to calendar" and
+  "Change it". Table based and inline styled so it renders in Gmail,
+  Outlook and Apple Mail; {{name}}, {{service}}, {{stylist}}, {{date}},
+  {{time}}, {{price}} and {{email}} are the mailer's placeholders. A
+  how-to-use note is at the top of the file.
+
+THE HOME PAGE, MODERNISED
+- Hero: a headline, a line and two buttons over each slide; below 992px
+  the copy sits under the photograph as a charcoal band.
+- Services: the four bare circles (the name only showed on hover) are
+  cards on the charcoal band — photo, name in gold, a line and a
+  "from $" price; the whole card is the link.
+- "Impressed with us?": the Lorem line is real copy.
+- Team: name and role under every photo (version 1 showed the name on
+  hover only); the social icons still appear on hover.
+- Testimonial: one centred quote — photo, words, name — instead of a
+  photo column beside a justified block.
+- Counters in gold; a gold focus ring on the form; a gold rule on top
+  of the footer.
+- Gold buttons use charcoal text (7:1) rather than white (2.2:1).
+
+WORKING WHERE IT WAS DECORATIVE
+- Search: both header boxes submit to blog.html?q=… and filter the
+  posts; the tags on a post do the same.
+- Blog: four posts (version 1 had two) so the search has something to
+  filter.
+- 76 bare "#" links in version 1 — the service names and circles, the
+  team photos and names, Read More, Get an appointment, the tags, the
+  popular posts, the social icons — every one goes somewhere.
+- Forms validate and confirm: appointment (home, appointment page),
+  contact, comments, search. Every field has a label, a name, a type and
+  autocomplete. The Clear buttons are gone.
+- The team carousel works (version 1's was broken: a 271px strip);
+  Prev / Next and dots, no jQuery.
+- The gallery's overlays work on touch and keyboard (:focus-within), and
+  the photographs open in a lightbox.
+- The footer's Instagram strip shows six photographs; version 1 drew it
+  at runtime from a dead Instagram API with an access token shipped in
+  the page. The token is gone.
+- Counters animate on scroll; the off-canvas menu opens, closes on Esc
+  and outside click, and reports its state to screen readers.
+
+CONTENT
+- 58 Lorem Ipsum passages are salon copy of the same length, so every
+  block keeps its height.
+- A title and meta description per page; alt text on every image.
+
+UNDER THE HOOD
+- Bootstrap 3.3.6 + jQuery → Bootstrap 5.3, no jQuery, one
+  dependency-free js/main.js (owl replacement, off-canvas, lightbox,
+  counters, search, forms, back to top).
+- Font Awesome 4 (1.1 MB of eot / ttf / svg / otf) → Font Awesome 6 as
+  three woff2 files (304 KB). Aileron: sixteen Font Squirrel families
+  (813 KB) → one "Aileron" family in six woff2 cuts (124 KB) with real
+  weights, so font-weight works as CSS expects. antonio-exotic (never
+  used) dropped. Nothing is loaded from a third party.
+- magnific-popup, lightbox, owl.carousel, classie, modernizr,
+  counterup, waypoints, inview, instafeed, scrolling-nav dropped: main.js
+  covers what the design used.
+- css/bs3-compat.css: the Bootstrap 3 behaviours this design relies on
+  (15px base type, fixed heading sizes, the 1170 container, the navbar's
+  layout) restored on top of Bootstrap 5. Safe to trim.
+- style.css section 8 holds the modernised look; delete it to get the
+  version 1 home page back on the same markup.
+- The entry page is index.html (version 1: home.html, kept as a redirect).
+- No inline styles or inline event handlers, no duplicate ids, lang="en",
+  https links.
+
+FILES
+  index.html · about.html · service.html · service-details.html ·
+  team-member.html · prices.html · appointment.html · gallery.html ·
+  blog.html · single-blog.html · contact.html · 404.html ·
+  email-appointment.html · home.html (redirect) · css/ · js/ · fonts/ ·
+  webfonts/ · images/ · License.txt · CHANGELOG.txt
+
+Version 1.0
+-----------
+Initial release: seven pages, Bootstrap 3, jQuery, Owl Carousel,
+Magnific Popup, counterUp, Instafeed, Font Awesome 4.

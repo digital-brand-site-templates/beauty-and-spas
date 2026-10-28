@@ -1,0 +1,80 @@
+Spacelon — Beauty Salon & Spa HTML Template
+============================================
+
+Version 2.0 — 2026
+------------------
+
+A rebuild on a modern stack — the same design, checked block by block
+against version 1 at desktop, tablet and phone widths — plus the pages the
+site always pointed at but never had, an appointment-confirmation email in
+the same design, and the things that were broken in version 1 quietly
+fixed.
+
+
+NEW
+- appointment.html — the booking page behind "Make An Appointment" (the
+  header button, the offer band, the four "Select Plan" buttons): service,
+  date, time, name, phone, email, a note, with opening hours and the
+  salon's phone and address beside the form.
+- blog.html and single-blog.html — the listing and the post behind the
+  home page's three blog cards, which had nothing to click in version 1.
+  The post ends in a "Book This Treatment" button.
+- 404.html — a not-found page with three ways back in.
+- email-appointment.html — the confirmation a client receives after
+  booking: the details in a box, add-to-calendar and change buttons,
+  before-you-come notes, address and hours. Table-based, inline-styled,
+  600px wide, with an Outlook conditional and a phone layout — the way
+  mail clients need it. Before sending, replace the images/... paths with
+  absolute URLs on your server and put your links in place of the "#" ones
+  (the file says so at the top).
+
+FIXED (things that were broken in version 1)
+- No page had a main heading (h1). Each page's first block title — and
+  the first slide's title on the home page — is the h1 now, same look.
+- The header's envelope icon showed a PHONE number, linked as a phone
+  number; it shows the salon's email address.
+- The logo linked to #myPage, an anchor that exists on no page.
+- 82 "#" links now go somewhere: both Make An Appointment buttons and the
+  four Select Plan buttons to the booking page, the two slides' Read More
+  to the services, the about blurb's to the about page, the sixteen expert
+  social icons to the networks, the footer's six as well.
+- The counters start when they scroll into view (they ran on page load,
+  before the section was on screen).
+- The newsletter field is an email field with a label and a name; the
+  gallery lightbox opens with a keyboard and closes on Escape.
+- The white feature icons on the gradient discs had turned black under
+  Bootstrap 5; the gallery filter tabs had slid to the left; the about
+  block's Read More had stretched to the full width. All as version 1.
+
+DESIGN
+- Unchanged. The fonts are version 1's own (Poppins, Dosis, Dancing
+  Script), self-hosted as before — but only the five cuts the stylesheet
+  uses ship (100 KB where version 1 packed 36 files, 1 MB).
+
+UNDER THE HOOD
+- Bootstrap 3.3.6 + jQuery 3.2 + counterup + waypoints + lightbox.js →
+  Bootstrap 5.3, no jQuery. js/main.js is one dependency-free file: the
+  lightbox, the counters, the menu closing after a tap, form validation,
+  back-to-top. The carousel and the gallery tabs are Bootstrap's own.
+- Font Awesome 4 → 6 (woff2 subset).
+- css/bs3-compat.css: the Bootstrap 3 behaviours this design relies on
+  (the 1170 container, panel metrics, form control heights) restored on top
+  of Bootstrap 5. Safe to trim.
+- Every page: a unique <title> and meta description, lang="en", one h1,
+  no inline styles, no inline scripts, every image with alt text and
+  width/height (no layout shift), lazy loading below the fold, labelled
+  form fields, https links.
+- home.html redirects to index.html (the entry page is index.html now).
+
+FILES
+  index.html (home.html redirects to it) · about.html · service.html ·
+  gallery.html · contact.html · appointment.html · blog.html ·
+  single-blog.html · 404.html · email-appointment.html · css/ · js/ ·
+  fonts/ · webfonts/ · images/ · License.txt · CHANGELOG.txt
+
+Version 1.0
+-----------
+Initial release: five pages, Bootstrap 3, jQuery.
+
+License: see License.txt. Please keep the ThemeVault link in the footer of
+the free version; the credit-removal option is available on the site.

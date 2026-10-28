@@ -1,0 +1,332 @@
+<!--
+Template Name: Timecenter
+File Name: product-list.html
+Author Name: ThemeVault
+Author URI: https://www.themevault.net/
+License URI: https://www.themevault.net/license/
+Version: 2.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timecenter</title>
+        <meta name="description" content="Browse the full Timecenter catalogue in list view, with specifications, prices and quick add to bag.">
+        <link rel="icon" href="images/favicon.png"/>
+
+        <!-- Bootstrap 5, Font Awesome 6, then v1's own stylesheets in v1's order -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bs3-defaults.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <link href="css/bs5-shim.css" rel="stylesheet">
+        <link href="css/_modern.css" rel="stylesheet">
+        <link href="css/design.css" rel="stylesheet">
+    </head>
+    <body class="tv-preload">
+
+        <header class="tc-header">
+                <div class="tc-util">
+                    <div class="tc-wrap tc-util__row">
+                        <p class="tc-util__note"><i class="fas fa-shield-halved" aria-hidden="true"></i> Complimentary insured delivery &middot; Two-year warranty on every watch</p>
+                        <div class="tc-util__end">
+                            <div class="dropdown tc-util__pick">
+                                <button type="button" class="tc-util__btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">English</button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><button type="button" class="dropdown-item" data-tc-pick="English">English</button></li>
+                                    <li><button type="button" class="dropdown-item" data-tc-pick="Chinese">Chinese</button></li>
+                                    <li><button type="button" class="dropdown-item" data-tc-pick="French">French</button></li>
+                                    <li><button type="button" class="dropdown-item" data-tc-pick="Spanish">Spanish</button></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown tc-util__pick">
+                                <button type="button" class="tc-util__btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Rupees</button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><button type="button" class="dropdown-item" data-tc-pick="US Dollar">US Dollar</button></li>
+                                    <li><button type="button" class="dropdown-item" data-tc-pick="Rupees">Rupees</button></li>
+                                </ul>
+                            </div>
+                            <ul class="tc-social" aria-label="Timecenter on social media">
+                                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <section class="main-nav-block tc-nav tc-nav--split">
+                    <nav class="navbar navbar-expand-lg tc-nav__bar" aria-label="Main">
+                        <div class="tc-wrap tc-nav__grid">
+                            <button type="button" class="navbar-toggler navbar-toggle tc-burger" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Open the menu">
+                                <span></span><span></span><span></span>
+                            </button>
+                            <div id="logo" class="tc-logo">
+                                <a href="index.html"><span class="tc-logo__name">Timecenter</span><span class="tc-logo__sub">Fine watches &middot; Est. 2017</span></a>
+                            </div>
+                            <div class="collapse navbar-collapse tc-nav__panel" id="myNavbar">
+                                <ul class="navbar-nav tc-menu tc-menu--left">
+                                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="product.html">Simple Watch</a></li>
+                                            <li><a class="dropdown-item" href="product.html">Ladies Watch</a></li>
+                                            <li><a class="dropdown-item" href="product.html">Gents Watch</a></li>
+                                            <li><a class="dropdown-item" href="product.html">Purity Watch</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="active nav-item"><a class="nav-link active" href="product-list.html" aria-current="page">Shop</a></li>
+                                </ul>
+                                <ul class="navbar-nav tc-menu tc-menu--right">
+                                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                </ul>
+                                <div class="tc-nav__extras">
+                                    <a href="login.html">Login</a><a href="register.html">Register</a>
+                                </div>
+                            </div>
+                            <div class="tc-tools">
+                                <button type="button" class="tc-tool" data-tc-search aria-expanded="false" aria-controls="tc-search" aria-label="Search"><i class="fas fa-magnifying-glass" aria-hidden="true"></i></button>
+                                <div class="dropdown tc-tool-wrap">
+                                    <button type="button" class="tc-tool" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account"><i class="far fa-user" aria-hidden="true"></i></button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                    </ul>
+                                </div>
+                                <a class="tc-tool" id="wishlist-total" href="wishlist.html" aria-label="Wishlist, 3 items"><i class="far fa-heart" aria-hidden="true"></i><span class="tc-count">3</span></a>
+                                <a class="tc-tool" href="cart.html" aria-label="Shopping bag, 2 items"><i class="fas fa-bag-shopping" aria-hidden="true"></i><span class="tc-count">2</span></a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="tc-search" id="tc-search" hidden>
+                        <form class="tc-wrap tc-search__form" action="product-list.html" role="search">
+                            <div class="input-group" id="search">
+                                <label class="visually-hidden" for="tc-search-q">Search watches</label>
+                                <input type="search" class="form-control search-box" id="tc-search-q" placeholder="Search by name, strap or movement" name="search">
+                                <button class="btn search-button" type="submit">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+        </header>
+        <main id="tc-main">
+
+            <section class="tc-pagehead">
+                <div class="tc-wrap">
+                    <nav aria-label="Breadcrumb"><ul class="breadcrumb tc-crumbs"><li><a href="index.html" aria-label="Home"><i class="fas fa-house" aria-hidden="true"></i></a></li><li><a href="product.html">Watches</a></li><li aria-current="page"><span>All watches</span></li></ul></nav>
+                    <p class="tc-pagehead__kicker">The collection</p>
+                    <h1 class="tc-pagehead__title">All watches</h1>
+                    <p class="tc-pagehead__lead">Automatic, quartz and hand-wound watches from independent houses, each with a two-year warranty.</p>
+                </div>
+                <div class="tc-ruler" aria-hidden="true"></div>
+            </section>
+            <div id="container" class="tc-wrap tc-shop product-list">
+                <div class="tc-shop__grid">
+                    <aside id="column-left" class="tc-side">
+                        <div class="box tc-side__box">
+                            <h2 class="tc-side__title">Categories</h2>
+                            <div class="box-category">
+                                <ul class="menu tc-tree">
+                                    <li><a href="product.html"><span>Simple Watch</span><span class="tc-tree__n">24</span></a><i class="fas fa-chevron-down" aria-label="Show Simple Watch styles"></i>
+                                        <ul hidden><li><a href="product.html"><span>Everyday</span><span class="tc-tree__n">11</span></a></li><li><a href="product.html"><span>Minimal</span><span class="tc-tree__n">8</span></a></li><li><a href="product.html"><span>Field</span><span class="tc-tree__n">5</span></a></li></ul></li>
+                                    <li><a href="product.html"><span>Ladies Watch</span><span class="tc-tree__n">31</span></a><i class="fas fa-chevron-down" aria-label="Show Ladies Watch styles"></i>
+                                        <ul hidden><li><a href="product.html"><span>Mesh</span><span class="tc-tree__n">12</span></a></li><li><a href="product.html"><span>Leather</span><span class="tc-tree__n">13</span></a></li><li><a href="product.html"><span>Petite</span><span class="tc-tree__n">6</span></a></li></ul></li>
+                                    <li><a href="product.html"><span>Gents Watch</span><span class="tc-tree__n">42</span></a><i class="fas fa-chevron-down" aria-label="Show Gents Watch styles"></i>
+                                        <ul hidden><li><a href="product.html"><span>Dress</span><span class="tc-tree__n">17</span></a></li><li><a href="product.html"><span>Diver</span><span class="tc-tree__n">9</span></a></li><li><a href="product.html"><span>Chronograph</span><span class="tc-tree__n">16</span></a></li></ul></li>
+                                    <li><a href="product.html"><span>Purity Watch</span><span class="tc-tree__n">12</span></a><i class="fas fa-chevron-down" aria-label="Show Purity Watch styles"></i>
+                                        <ul hidden><li><a href="product.html"><span>Gold tone</span><span class="tc-tree__n">5</span></a></li><li><a href="product.html"><span>Steel</span><span class="tc-tree__n">4</span></a></li><li><a href="product.html"><span>Moonphase</span><span class="tc-tree__n">3</span></a></li></ul></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box latest tc-side__box">
+                            <h2 class="tc-side__title">Latest</h2>
+                            <div class="box-content">
+                                <article class="tc-mini">
+                                    <a class="tc-mini__img" href="single-product.html"><img src="images/pro11.jpg" alt="Harbour Blue 42 watch" width="160" height="160" loading="lazy"></a>
+                                    <div>
+                                        <p class="tc-mini__name"><a href="single-product.html">Harbour Blue 42</a></p>
+                                        <p class="tc-mini__price">$480</p>
+                                        <p class="tc-stars" aria-label="Rated 5 out of 5"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></p>
+                                    </div>
+                                </article>
+                                <article class="tc-mini">
+                                    <a class="tc-mini__img" href="single-product.html"><img src="images/pro12.jpg" alt="Cobalt 36 Steel watch" width="160" height="160" loading="lazy"></a>
+                                    <div>
+                                        <p class="tc-mini__name"><a href="single-product.html">Cobalt 36 Steel</a></p>
+                                        <p class="tc-mini__price">$455</p>
+                                        <p class="tc-stars" aria-label="Rated 5 out of 5"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="box latest tc-side__box">
+                            <h2 class="tc-side__title">Specials</h2>
+                            <div class="box-content">
+                                <article class="tc-mini">
+                                    <a class="tc-mini__img" href="single-product.html"><img src="images/pro2.jpg" alt="Nightfall 40 watch" width="160" height="160" loading="lazy"></a>
+                                    <div>
+                                        <p class="tc-mini__name"><a href="single-product.html">Nightfall 40</a></p>
+                                        <p class="tc-mini__price"><span class="price-new">$149</span> <s class="price-old">$185</s></p>
+                                        <p class="tc-stars" aria-label="Rated 5 out of 5"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </aside>
+                    <div id="content" class="tc-shop__main">
+                        <h2 class="tc-shop__title">Watch</h2>
+                        <p class="tc-shop__intro">Every watch in the Timecenter collection is chosen by our watchmakers, then inspected, regulated to within seconds a day and boxed by hand in our Mumbai workshop. Filter by style below, or browse the full case of automatics, quartz and hand-wound pieces.</p>
+                        <h3 class="tc-sub">Refine Search</h3>
+                        <ul class="box-subcat tc-refine">
+                            <li><a href="product.html"><img src="images/img1.jpg" alt="" width="400" height="400" loading="lazy"><span>Watch</span></a></li>
+                            <li><a href="product.html"><img src="images/img2.jpg" alt="" width="400" height="400" loading="lazy"><span>Smart watch</span></a></li>
+                            <li><a href="product.html"><img src="images/img3.jpg" alt="" width="400" height="400" loading="lazy"><span>Gift watch</span></a></li>
+                            <li><a href="product.html"><img src="images/img4.jpg" alt="" width="400" height="400" loading="lazy"><span>Digital watch</span></a></li>
+                        </ul>
+                        <div class="block-filter tc-toolbar">
+                            <div class="btn-group tc-views" role="group" aria-label="View">
+                                <a class="tc-view active" id="list-view" href="product-list.html" aria-label="List view" aria-current="page"><i class="fas fa-list" aria-hidden="true"></i></a>
+                                <a class="tc-view" id="grid-view" href="product.html" aria-label="Grid view"><i class="fas fa-grip" aria-hidden="true"></i></a>
+                            </div>
+                            <a class="tc-link" id="compare-total" href="product-list.html">Compare (<span data-tc-compare-count>0</span>)</a>
+                            <label class="tc-select" for="input-sort"><span>Sort by</span>
+                                <select id="input-sort" name="sort"><option>Default</option><option>Name (A – Z)</option><option>Name (Z – A)</option><option>Price (low &gt; high)</option><option>Price (high &gt; low)</option><option>Model (Z – A)</option></select>
+                            </label>
+                            <label class="tc-select" for="input-limit"><span>Show</span>
+                                <select id="input-limit" name="limit"><option>12</option><option>24</option><option>48</option><option>100</option></select>
+                            </label>
+                        </div>
+                        <div class="tc-rows">
+<article class="product-layout product-list tc-row">
+                            <a class="tc-row__img" href="single-product.html"><img src="images/pro4.jpg" alt="Lumen Moonphase watch" width="800" height="800" loading="lazy"></a>
+                            <div class="tc-row__body">
+                                <p class="tc-stars" aria-label="Rated 5 out of 5"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></p>
+                                <h3 class="tc-row__name"><a href="single-product.html">Lumen Moonphase</a></h3>
+                                <p class="tc-card__meta">40 mm &middot; Automatic &middot; 50 m</p>
+                                <p class="tc-row__desc">A moonphase complication under a domed crystal, set in a 40 mm case with a black sunray dial and gold-tone hands. Swiss automatic movement with 38 hours of reserve, on a padded calfskin strap.</p>
+                            </div>
+                            <div class="tc-row__buy">
+                                <p class="tc-row__price"><span class="price-new">$640</span> <s class="price-old">$760</s></p>
+                                <a class="tc-btn tc-btn--ink" href="cart.html">Add to bag</a>
+                                <div class="tc-row__icons">
+                                    <a class="tc-icon-btn" href="wishlist.html" aria-label="Save Lumen Moonphase to wishlist"><i class="far fa-heart" aria-hidden="true"></i></a>
+                                    <button type="button" class="tc-icon-btn" data-tc-compare aria-pressed="false" aria-label="Compare Lumen Moonphase"><i class="fas fa-shuffle" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </article>
+<article class="product-layout product-list tc-row">
+                            <a class="tc-row__img" href="single-product.html"><img src="images/pro5.jpg" alt="Carrow Dress 38 watch" width="800" height="800" loading="lazy"></a>
+                            <div class="tc-row__body">
+                                <p class="tc-stars" aria-label="Rated 5 out of 5"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></p>
+                                <h3 class="tc-row__name"><a href="single-product.html">Carrow Dress 38</a></h3>
+                                <p class="tc-card__meta">38 mm &middot; Hand-wound &middot; 30 m</p>
+                                <p class="tc-row__desc">A slim hand-wound dress watch with a silvered dial and applied indices. The 38 mm case sits under a cuff, and the brown leather strap softens with wear. Wind it each morning, like a ritual.</p>
+                            </div>
+                            <div class="tc-row__buy">
+                                <p class="tc-row__price">$510</p>
+                                <a class="tc-btn tc-btn--ink" href="cart.html">Add to bag</a>
+                                <div class="tc-row__icons">
+                                    <a class="tc-icon-btn" href="wishlist.html" aria-label="Save Carrow Dress 38 to wishlist"><i class="far fa-heart" aria-hidden="true"></i></a>
+                                    <button type="button" class="tc-icon-btn" data-tc-compare aria-pressed="false" aria-label="Compare Carrow Dress 38"><i class="fas fa-shuffle" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </article>
+<article class="product-layout product-list tc-row">
+                            <a class="tc-row__img" href="single-product.html"><img src="images/pro6.jpg" alt="Noir Mesh 39 watch" width="800" height="800" loading="lazy"></a>
+                            <div class="tc-row__body">
+                                <p class="tc-stars" aria-label="Rated 5 out of 5"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></p>
+                                <h3 class="tc-row__name"><a href="single-product.html">Noir Mesh 39</a></h3>
+                                <p class="tc-card__meta">39 mm &middot; Quartz &middot; 30 m</p>
+                                <p class="tc-row__desc">Clean black mesh and a matte dial with blue accents: a quartz everyday watch that goes with anything. Quick-release strap, 39 mm case, 30 m water resistance.</p>
+                            </div>
+                            <div class="tc-row__buy">
+                                <p class="tc-row__price">$160</p>
+                                <a class="tc-btn tc-btn--ink" href="cart.html">Add to bag</a>
+                                <div class="tc-row__icons">
+                                    <a class="tc-icon-btn" href="wishlist.html" aria-label="Save Noir Mesh 39 to wishlist"><i class="far fa-heart" aria-hidden="true"></i></a>
+                                    <button type="button" class="tc-icon-btn" data-tc-compare aria-pressed="false" aria-label="Compare Noir Mesh 39"><i class="fas fa-shuffle" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </article>
+                        </div>
+                        <nav class="tc-pager" aria-label="Pages"><span aria-current="page">1</span><a href="product-list.html">2</a><a href="product-list.html">3</a><a class="tc-link" href="product-list.html">Next</a></nav>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <footer class="tc-footer">
+                <div class="tc-zones" aria-label="Local time in our partner cities">
+                    <div class="tc-wrap tc-zones__row">
+                        <p class="tc-zones__label">Our watchmakers keep time in</p>
+                        <ul class="tc-zones__list">
+                            <li class="tc-zone" data-tz="Europe/Zurich"><span class="tc-zone__face" aria-hidden="true"><i class="tc-zone__h"></i><i class="tc-zone__m"></i></span><span class="tc-zone__city">Geneva</span><time class="tc-zone__time">--:--</time></li>
+                            <li class="tc-zone" data-tz="Europe/London"><span class="tc-zone__face" aria-hidden="true"><i class="tc-zone__h"></i><i class="tc-zone__m"></i></span><span class="tc-zone__city">London</span><time class="tc-zone__time">--:--</time></li>
+                            <li class="tc-zone" data-tz="America/New_York"><span class="tc-zone__face" aria-hidden="true"><i class="tc-zone__h"></i><i class="tc-zone__m"></i></span><span class="tc-zone__city">New York</span><time class="tc-zone__time">--:--</time></li>
+                            <li class="tc-zone" data-tz="Asia/Kolkata"><span class="tc-zone__face" aria-hidden="true"><i class="tc-zone__h"></i><i class="tc-zone__m"></i></span><span class="tc-zone__city">Mumbai</span><time class="tc-zone__time">--:--</time></li>
+                            <li class="tc-zone" data-tz="Asia/Tokyo"><span class="tc-zone__face" aria-hidden="true"><i class="tc-zone__h"></i><i class="tc-zone__m"></i></span><span class="tc-zone__city">Tokyo</span><time class="tc-zone__time">--:--</time></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tc-wrap tc-footer__main">
+                    <div class="tc-footer__about">
+                        <a class="tc-footer__logo" href="index.html">Timecenter</a>
+                        <p>An independent watch boutique. Every piece is inspected, regulated and boxed by hand before it leaves our workshop.</p>
+                        <address>12 Clockmaker's Row, Mumbai 400001<br><a href="tel:+912240001234">+91 22 4000 1234</a> &middot; <a href="mailto:hello@timecenter.example">hello@timecenter.example</a></address>
+                        <ul class="tc-social tc-social--foot" aria-label="Timecenter on social media">
+                            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block"><h4>INFORMATION <i class="fas fa-angle-up" aria-hidden="true"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html#delivery">Delivery Information</a></li>
+                            <li><a href="contact.html#privacy">Privacy Policy</a></li>
+                            <li><a href="contact.html#terms">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block"><h4>EXTRAS <i class="fas fa-angle-up" aria-hidden="true"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="contact.html#returns">Returns</a></li>
+                            <li><a href="contact.html#sitemap">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block"><h4>SERVICE <i class="fas fa-angle-up" aria-hidden="true"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#tc-brands">Brands</a></li>
+                            <li><a href="contact.html#gifts">Gift Vouchers</a></li>
+                            <li><a href="contact.html#affiliates">Affiliates</a></li>
+                            <li><a href="product.html">Specials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block"><h4>MY ACCOUNT <i class="fas fa-angle-up" aria-hidden="true"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="login.html">My Account</a></li>
+                            <li><a href="login.html">Order History</a></li>
+                            <li><a href="wishlist.html">Wish List</a></li>
+                            <li><a href="index.html#tc-newsletter">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tc-footer__base">
+                    <div class="tc-wrap tc-footer__base-row">
+                        <p>&copy; <span id="tv-year">2026</span> Timecenter. All rights reserved.</p>
+                        <p class="tc-footer__pay" aria-label="Payment methods we accept"><i class="fab fa-cc-visa" aria-hidden="true"></i><i class="fab fa-cc-mastercard" aria-hidden="true"></i><i class="fab fa-cc-amex" aria-hidden="true"></i><i class="fab fa-cc-paypal" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </footer>
+            <button type="button" id="back-to-top" aria-label="Back to top"><i class="fas fa-angle-up" aria-hidden="true"></i></button>
+
+
+        <script src="js/bootstrap.bundle.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+Stylinto — Fashion Store Ecommerce Website Template
+===================================================
+
+Version 2.0 — 2026
+-------------------
+
+- A completely new design, "Editorial Atelier": Fraunces headlines with
+  Inter text on warm paper, ink and terracotta, arch-framed photos, a
+  sticky frosted header with a category mega menu, a scrolling category
+  strip and a terracotta newsletter band. Every page, header and footer
+  was redesigned; all of the original pages, links and headings remain.
+- Rebuilt on Bootstrap 5 with every behaviour in plain JavaScript
+  (js/main.js): the category tree, product gallery, tabs, quantity
+  steppers, checkout steps, footer folds on phones, back-to-top and
+  every form. Font Awesome 4 -> 6; all fonts are self-hosted.
+- Nine new pages: order confirmation, my account (orders, addresses,
+  details), wishlist, about, contact (form, map, store hours), help &
+  FAQ (delivery, returns, privacy, terms and a site map), size guide,
+  forgot password and a 404 page.
+- Six ready-to-send HTML emails, one per form: registration welcome,
+  order confirmation, review received, contact auto-reply, password
+  reset and newsletter welcome (email-*.html). They adapt to phones.
+- Shop pages: product cards with a second photo on hover and a quick
+  add-to-cart bar, a filter sidebar (a slide-out drawer on phones and
+  tablets), sort and view toggles, pagination and product names in
+  place of "Girls Top" on every card.
+- Product page: a clickable photo gallery, size pills with a size-guide
+  link, a quantity stepper, description and review tabs, a star-rating
+  review form and related products.
+- Cart and checkout: line items with quantity controls, a sticky order
+  summary, coupon and gift-certificate panels, and six checkout steps
+  that open one after another. The totals now add up.
+- Every form is labelled, validates and confirms: login, register,
+  forgot password, reviews, coupons, contact, account details and the
+  newsletter. Real copy replaces the placeholder text.
+- Phones and tablets: a burger menu with search and the category tree,
+  two-column product grids on tablets and phones, and no sideways
+  scrolling from 320px up.
+- Fixes: 20 dead links (two of them reloaded the page), missing alt
+  text and form labels, 60 inline styles, the keyboard focus outline
+  that was switched off everywhere, and a shopping cart whose totals
+  did not match its items.

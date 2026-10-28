@@ -1,0 +1,374 @@
+/*
+Template Name: beautica
+File Name: responsive.css
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/
+*/
+
+/* Landscape phones and smaller */
+@media (min-width: 1199px) and (max-width: 1240px) {
+    #myCarousel2 .carousel-control.right{
+        right: -30px;
+    }
+    #myCarousel2 .carousel-control.left{
+        left: -30px;
+    }
+}
+@media (max-width: 1199px) {
+    .navbar-default .navbar-nav li + li {
+        margin-left: 25px;
+    }
+    .navbar-default .navbar-nav li a{
+        font-size: 15px;
+    }
+    .search-bar {
+        margin-top: 0px;
+    }
+    #search:focus {
+        width: 125px;
+    }
+    #myCarousel2 p{
+        margin-top: 20px;
+    }
+    .full-bg-image{
+        padding: 35px 0 65px 0;
+    }
+    .information{
+        margin-top: 30px;
+    }
+    .information > h1::after{
+        margin: 35px auto 40px;
+    }
+    #myCarousel2 .carousel-inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+    #myCarousel2 .carousel-control.left{
+        left: 0;
+    }
+    #myCarousel2 .carousel-control.right{
+        right: 0;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .footer-details > h4, .tag-list h3{
+        font-size: 15px;
+    }
+    .time-schedule-list li{
+        font-size: 13px;
+    }
+    .information > h5{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .search-bar {
+        margin-top: 16px;
+    }
+/*    #myCarousel1 .carousel-inner .item img{
+        height: 600px !important;
+    }*/
+    .about-block, .service-block, .booking-form-block, .customer-block, .counter-block, .staff-block, .gallery-block, .news-block, .contact-block, .single-blog-block{
+        padding-top: 50px;
+    }
+    .block-heading{
+        margin-bottom: 50px;
+    }
+    .block-heading > h1 {
+        font-size: 23px;
+    }
+    .left-side > h4{
+        font-size: 18px;
+    }
+    .footer-details > h4, .tag-list h3{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .footer-links li + li, .time-schedule-list li + li{
+        margin-top: 15px;
+    }
+    .insta-block {
+        clear: both;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .staff-info h3{
+        font-size: 18px;sss
+    }
+    .staff-info > p{
+        font-size: 15px;
+    }
+    .social-grid > a{
+        width: 28px;
+        height: 28px;
+    }
+    .social-grid a > i {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .news-block h3 {
+        font-size: 18px;
+        margin-top: 35px;
+    }
+    .news-block p{
+        font-size: 14.5px;
+        line-height: 24px;
+    }
+    .contact-details p {
+        font-size: 13.5px;
+        letter-spacing: 0.5px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-loc-info{
+        margin-top: 10px;
+    }
+/*    #myCarousel1 .carousel-inner .item img{
+        height: 400px !important;
+    }*/
+    .about-block, .service-block, .booking-form-block, .customer-block, .counter-block, .staff-block, .gallery-block, .news-block, .contact-block, .single-blog-block{
+        padding-top: 40px;
+    }
+    .block-heading{
+        margin-bottom: 30px;
+    }
+    .block-heading > h1 {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .about-block p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .left-side > h4{
+        font-size: 17px;
+    }
+    .right-side > img {
+        max-width: 42px;
+    }
+    .service-block-inner p{
+        line-height: 22px;
+    }
+    .book-form .offspace-40 {
+        margin-top: 0;
+    }
+    .book-form input{
+        height: 35px;
+    }
+    .bg-banner{
+        padding: 45px 0;
+    }
+    .action-buttons .btn, .read-more{
+        padding: 6px 15px;
+    }
+    #myCarousel2 p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .information {
+        border-bottom: 1px dashed #ddd;
+        padding-bottom: 15px;
+    }
+    .staff-image, .gallery-image {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 365px;
+    }
+    .staff-block .row > div + div, .gallery-block .row > div + div {
+        margin-top: 15px;
+    }
+    .gallery-block .offspace-30{
+        margin-top: 0;
+    }
+    .news-block h3 {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    .news-block h5{
+        margin-bottom: 15px;
+    }
+    .news-block p, .single-blog-desc > p, .p_bq {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: left;
+    }
+    .news-block .row > div + div{
+        margin-top: 25px;
+    }
+    .navbar-default .navbar-nav li + li {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+    .navbar-default .navbar-nav li a{
+        font-size: 13.5px;
+    }
+    .footer-details > h4, .tag-list h3{
+        margin-bottom: 30px;
+        margin-top: 25px;
+    }
+    .footer-links li + li, .time-schedule-list li + li {
+        margin-top: 15px;
+    }
+    .footer-links li a, .time-schedule-list li{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    footer{
+        padding-top: 15px;
+    }
+    .copyright{
+        font-size: 13px;
+    }
+    .image-head-wrapper{
+        height: 400px;
+    }
+    /*    ul.navbar-nav {
+            background: rgba(0,0,0,0.9);
+            padding: 20px 0 20px 20px;
+        }*/
+    .top-nav-collapse{
+        padding-bottom: 10px;
+    }
+    .top-nav-collapse .offspace-70{
+        margin-top: 10px;
+    }
+    .location-address > p, .top-loc-info > p {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .top-nav-collapse .offspace-70, .top-nav-collapse #logo a {
+        margin-top: 0;
+    }
+    #logo a{
+        margin-top: 10px;
+    }
+    .navbar-default .offspace-70{
+        margin-top: 0;
+    }
+    .get-in-touch-info{
+        border-left-width: 15px;
+        margin-top: 20px;
+    }
+    .title-name h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 23px;
+    }
+    .comment-form h3{
+        font-size: 20px;
+    }
+    .comment-form .comment:first-child {
+        margin-bottom: 20px;
+    }
+    .comment-form textarea{
+        min-height: 120px;
+    }
+    .single-blog-footer div + div {
+        margin-top: 25px;
+    }
+    .feedback-list{
+        margin-top: 35px;
+    }
+    #myCarousel2 .carousel-control.right{
+        right: 15px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .about-block p {
+        font-size: 14.5px;
+        line-height: 24px;
+    }
+    .left-side > h4{
+        font-size: 18px;
+    }
+    .right-side > img {
+        max-width: 48px;
+    }
+    .service-block-inner p{
+        line-height: 24px;
+    }
+    .staff-block .row .col-xs-12, .gallery-block .row .col-xs-12 {
+        width: 50%;
+    }
+    .staff-block .row > div + div, .gallery-block .row > div + div{
+        margin-top: 0px;
+    }
+    .staff-block .row > div:last-child{
+        margin-top: 15px;
+    }
+    .gallery-image{
+        margin-top: 15px;
+    }
+    .image-head-wrapper{
+        height: 450px;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    header .row > .visible-xs{
+        clear: both;
+    }
+    .top-loc-info > p{
+        /*text-align: left;*/
+    }
+    .width-input-50,  .width-set-50, .comment-form .comment{
+        width: 50%;
+    }
+    .comment-form .comment:first-child {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 365px) and (max-width: 767px) {
+    .news-block{
+        text-align: center !important;
+    }
+}
+@media (max-width: 400px) {
+    #logo > a span{
+        font-size: 45px;
+    }
+    #logo a{
+        font-size: 22px;
+    }
+    .location-address > p, .top-loc-info > p {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .top-nav-collapse .offspace-70, .top-nav-collapse #logo a {
+        margin-top: 0;
+    }
+    #logo a{
+        margin-top: 10px;
+    }
+    .blog-view > div + div{
+        padding-left: 15px;
+    }
+
+
+}
+@media (max-width: 479px) {
+    .width-input-50 + .width-input-50 {
+        margin-top: 15px;
+    } 
+    .media-left, .media-right, .media-body {
+        display: block;
+        vertical-align: baseline;
+    }
+}
+
+
+
+
+
+

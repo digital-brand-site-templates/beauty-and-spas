@@ -1,0 +1,219 @@
+/* ==========================================================================
+   Bootstrap 5 shim — loaded AFTER the template's CSS: the hooks main.js
+   uses, then this template's own fixes (each one names the GATES.md line or
+   owner note it answers). The neutral Bootstrap 3 defaults live in
+   bs3-defaults.css, loaded before style.css — never restate them here.
+   ========================================================================== */
+
+/* Hooks main.js uses. */
+.tv-preload *, .tv-preload *::before, .tv-preload *::after { transition: none !important; animation-duration: 0s !important; } /* released by main.js one frame after load */
+.tv-nohover .dropdown-menu:not(.show) { opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; } /* a hover-opened menu stays shut until the first mousemove / touch (main.js) — the cursor may be resting on the nav when the page paints */
+#back-to-top { display: none; position: fixed; right: 20px; bottom: 20px; z-index: 999; width: 44px; height: 44px; border: 0; border-radius: 50%; background: #e09629; color: #fff; font: inherit; cursor: pointer; }
+#back-to-top.is-visible { display: block; }
+.tv-form-note { color: #e09629; margin: 15px 0 0; font-size: 14px; font-weight: 600; }
+.form-control.is-invalid, select.is-invalid, textarea.is-invalid, input.is-invalid { border-color: #dc3545 !important; }
+.tv-lightbox { position: fixed; inset: 0; z-index: 99999; display: none; align-items: center; justify-content: center; background: rgba(0, 0, 0, .92); }
+.tv-lightbox.is-open { display: flex; }
+.tv-lightbox img { max-width: 92vw; max-height: 84vh; box-shadow: 0 10px 40px rgba(0, 0, 0, .6); }
+.tv-lightbox button { position: absolute; border: 0; background: transparent; color: #fff; font-size: 34px; line-height: 1; cursor: pointer; opacity: .8; padding: 10px; }
+.tv-lb-close { top: 10px; right: 20px; font-size: 42px; } .tv-lb-prev { left: 10px; top: 50%; transform: translateY(-50%); } .tv-lb-next { right: 10px; top: 50%; transform: translateY(-50%); }
+.tv-section-pb { padding-bottom: 80px; } /* for new pages whose last section needs a floor */
+
+/* ==========================================================================
+   This template — every rule below names the gate line or owner note it
+   answers. Start empty; grow it from GATES.md, never from another template.
+   ========================================================================== */
+
+/* == beautica == */
+/* v1's fixed header was a BS3 block: BS5 makes .navbar and its .container flex rows, and v1's .top-row wrapper then shrank
+   to its content (the address / logo / contact columns came out 148px instead of 293 at 1440) */
+.navbar.navbar-fixed-top { display: block; }
+.navbar.navbar-fixed-top > .container { display: block; }
+/* v1's menu links have no side padding (li spacing does the work); BS5's .navbar-expand-md .navbar-nav .nav-link (0,3,0) gave them
+   15px a side and the menu wrapped to two lines at 1440 and 768. v1's value restated at (0,3,2). */
+.navbar-default .navbar-nav > li > a.nav-link { padding-left: 0; padding-right: 0; }
+/* owner round 1 "header touchups": the top strip keeps v1's lines and height. Book now is a slim one-line pill beside the email /
+   phone lines on desktop; below 992 it is left out of the strip (v1's height; phones get "Book online" in the menu) */
+.tv-book-wrap { display: none; margin: 0; }
+@media (min-width: 992px) {
+  .top-loc-info { display: grid; grid-template-columns: auto auto; justify-content: end; column-gap: 14px; align-items: center; }
+  .top-loc-info > p:not(.tv-book-wrap) { grid-column: 1; }
+  .top-loc-info > .tv-book-wrap { display: block; grid-column: 2; grid-row: 1 / span 2; }
+}
+.tv-book-btn { display: inline-block; padding: 4px 12px; border: 1px solid #e09629; background: #e09629; color: #1e3953 !important; font-size: 12px; font-weight: 600; line-height: 1.5; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; white-space: nowrap; transition: background-color .2s ease, color .2s ease; }
+.tv-book-btn:hover, .tv-book-btn:focus-visible { background: transparent; color: #e09629 !important; }
+@media (min-width: 768px) { .navbar-nav > .tv-nav-book { display: none; } }
+/* the carousel slides' inline style="width:100%", moved here */
+#myCarousel1 .carousel-item > img { width: 100%; }
+/* header search trigger: fills v1's 15px ring (the ring and its handle are v1's .inner-search) */
+.tv-search-open { display: block; width: 15px; height: 15px; border-radius: 50%; cursor: pointer; }
+.tv-search-open:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+/* the full-screen search dialog — one column on phones, the field and button side by side from 480px */
+body.tv-search-lock { overflow: hidden; }
+.tv-searchbox { width: 100vw; height: 100vh; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgba(30, 57, 83, .99); color: #fff; }
+.tv-searchbox[open] { display: flex; align-items: center; justify-content: center; }
+.tv-searchbox::backdrop { background: rgba(0, 0, 0, .4); }
+.tv-searchbox-inner { width: 100%; max-width: 760px; padding: 24px; }
+.tv-searchbox-title { margin: 0 0 18px; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #e09629; }
+.tv-searchbox-form { display: flex; gap: 12px; align-items: stretch; border-bottom: 3px solid #e09629; padding-bottom: 12px; }
+.tv-searchbox-form input { flex: 1 1 auto; min-width: 0; padding: 8px 2px; border: 0; background: transparent; color: #fff; font-size: 32px; outline: 0; box-shadow: none; }
+.tv-searchbox-form input:focus { outline: 0; box-shadow: none; }
+.tv-searchbox-form input::placeholder { color: rgba(255, 255, 255, .55); opacity: 1; }
+.tv-searchbox-form input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+.tv-searchbox-form .tv-btn { flex: 0 0 auto; }
+.tv-searchbox-popular { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 22px 0 0; font-size: 14px; }
+.tv-searchbox-popular span { margin-right: 4px; color: rgba(255, 255, 255, .7); letter-spacing: 1px; text-transform: uppercase; }
+.tv-searchbox-popular a { padding: 5px 14px; border: 1px solid rgba(255, 255, 255, .45); border-radius: 999px; color: #fff; text-decoration: none; }
+.tv-searchbox-popular a:hover, .tv-searchbox-popular a:focus-visible { border-color: #e09629; color: #e09629; }
+.tv-searchbox-close { position: absolute; top: 16px; right: 18px; width: 48px; height: 48px; padding: 0; border: 2px solid rgba(255, 255, 255, .5); border-radius: 50%; background: transparent; color: #fff; font-size: 30px; line-height: 42px; cursor: pointer; }
+.tv-searchbox-close:hover, .tv-searchbox-close:focus-visible { border-color: #e09629; color: #e09629; }
+@media (max-width: 767.98px) { .tv-searchbox-form input { font-size: 22px; } }
+@media (max-width: 479.98px) { .tv-searchbox-form { flex-direction: column; border-bottom: 0; padding-bottom: 0; } .tv-searchbox-form input { border-bottom: 3px solid #e09629; } .tv-searchbox-form .tv-btn { width: 100%; } }
+/* service cards (owner round 1 "slight improvements"): equal heights, the price chip and two actions pinned to the bottom */
+.service-block-inner { align-items: stretch; }
+.service-block-inner > [class*="col-"] { display: flex; }
+.service-block-inner [class*="section-"] { display: flex; flex-direction: column; width: 100%; }
+.service-block-inner .tv-card-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: auto 0 0; padding-top: 18px; }
+.tv-chip { margin-right: auto; padding: 4px 12px; border: 1px solid rgba(255, 255, 255, .65); border-radius: 999px; font-size: 13px; font-weight: 600; letter-spacing: .5px; }
+.tv-card-btn { display: inline-block; padding: 6px 16px; border: 1px solid #fff; color: #fff; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; transition: background-color .2s ease, color .2s ease; }
+.tv-card-btn:hover, .tv-card-btn:focus-visible { background: #fff; color: #1e3953; }
+.tv-card-btn-solid { background: #fff; color: #1e3953; }
+.tv-card-btn-solid:hover, .tv-card-btn-solid:focus-visible { background: transparent; color: #fff; }
+/* the static Instagram grid (v1's live feed) */
+.tv-insta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.tv-insta a { display: block; overflow: hidden; }
+.tv-insta img { display: block; width: 100%; height: auto; transition: opacity .2s ease; }
+.tv-insta a:hover img, .tv-insta a:focus-visible img { opacity: .75; }
+/* footer (owner pilot round 2): tighter headings, brand block, two-column links, aligned hours, one social style, bottom bar */
+footer .footer-details > h4, footer .tag-list h3 { margin-bottom: 22px; }
+footer .tag-list h3 { margin-top: 26px; }
+footer .footer-links li + li, footer .time-schedule-list li + li { margin-top: 12px; }
+.tv-foot-grid > [class*="col-"] { margin-bottom: 34px; }
+.tv-foot-logo { display: inline-block; margin-bottom: 14px; font-family: 'Abel', sans-serif; font-size: 30px; letter-spacing: 1px; color: #e09629; text-decoration: none; text-transform: uppercase; }
+.tv-foot-logo span { font-family: 'Montserrat', sans-serif; font-weight: 900; color: #fff; }
+.tv-foot-about { margin: 0 0 16px; font-size: 14px; line-height: 1.7; color: #d7e0ea; }
+.tv-foot-contact { margin: 0 0 18px; padding: 0; }
+.tv-foot-contact li { display: flex; gap: 10px; margin-bottom: 8px; font-size: 14px; line-height: 1.5; }
+.tv-foot-contact i { width: 16px; margin-top: 3px; color: #e09629; }
+.tv-foot-contact a { color: #fff; text-decoration: none; }
+.tv-foot-contact a:hover, .tv-foot-contact a:focus-visible { color: #e09629; }
+footer .footer-social-icon { display: flex; flex-wrap: wrap; gap: 10px; }
+footer .footer-social-icon a { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border: 1px solid rgba(255, 255, 255, .45); border-radius: 50%; color: #fff; text-decoration: none; transition: background-color .2s ease, border-color .2s ease, color .2s ease; }
+footer .footer-social-icon a .fa, footer .footer-social-icon a .fab { width: auto; height: auto; padding: 0; background: none !important; font-size: 15px; line-height: 1; }
+footer .footer-social-icon a:hover, footer .footer-social-icon a:focus-visible { background: #e09629; border-color: #e09629; color: #1e3953; }
+.tv-foot-links { columns: 2; column-gap: 20px; }
+.tv-foot-links li { break-inside: avoid; }
+footer .tv-foot-links li + li { margin-top: 0; }
+.tv-foot-links li { margin-bottom: 12px; }
+.tv-hours li { display: flex; justify-content: space-between; gap: 12px; max-width: 280px; padding-bottom: 10px; border-bottom: 1px dashed rgba(255, 255, 255, .22); }
+.tv-foot-book { margin-top: 18px; }
+footer .instagram-images { margin: 0; padding: 0; }
+footer .tv-insta { margin: 0; }
+.tv-foot-follow { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; color: #e09629; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-decoration: none; }
+.tv-foot-follow:hover, .tv-foot-follow:focus-visible { color: #fff; }
+.tv-foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; margin-top: 10px; padding-top: 22px; border-top: 1px solid rgba(255, 255, 255, .18); }
+.tv-foot-bottom p { margin: 0; }
+.tv-copy-links { display: flex; flex-wrap: wrap; gap: 18px; }
+.tv-copy-links a { color: inherit; text-decoration: underline; }
+@media (max-width: 767.98px) { .tv-foot-bottom { flex-direction: column; align-items: flex-start; } .tv-hours li { max-width: none; } }
+/* tablet (owner pilot round 2): the search icon sits at the end of the menu row, not on a row of its own (v1 wrapped it) —
+   the menu at 14px leaves room for it */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar .row.offspace-70 { flex-wrap: nowrap; align-items: center; }
+  .navbar .row.offspace-70 > .remove-left { flex: 1 1 auto; width: auto; min-width: 0; padding-right: 10px; }
+  .navbar .row.offspace-70 > [class*="col-"]:last-child { flex: 0 0 auto; width: auto; padding-left: 0; }
+  .navbar .search-bar { margin-top: 0; }
+  .navbar-default .navbar-nav > li > a.nav-link { font-size: 14px; }
+}
+/* QA pilot round 1: at 992-1199 the seven links at 15px (698px) wrapped CONTACT onto a second line (v1 did the same) — 14px there too */
+@media (min-width: 992px) and (max-width: 1199.98px) { .navbar-default .navbar-nav > li > a.nav-link { font-size: 14px; } }
+/* QA pilot round 1: the open phone menu was see-through over the hero captions (v1's slides had no words) — a solid panel */
+@media (max-width: 767.98px) {
+  #tv-nav.show, #tv-nav.collapsing { position: relative; z-index: 20; margin: 8px -15px 0; padding: 6px 15px 12px; background: rgba(17, 17, 17, .96); }
+}
+/* owner I1: testimonial arrows — round gold-outline buttons, centred on the slide (v1's positions kept on desktop) */
+#myCarousel2 .carousel-control.left, #myCarousel2 .carousel-control.right { display: flex; align-items: center; justify-content: center; width: 48px; opacity: 1; background: none; } /* (1,2,0): beats v1 width: 4% */
+.tv-arrow { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 2px solid #e09629; border-radius: 50%; background: #fff; color: #e09629; font-size: 16px; transition: background-color .2s ease, color .2s ease; }
+#myCarousel2 .carousel-control:hover .tv-arrow, #myCarousel2 .carousel-control:focus-visible .tv-arrow { background: #e09629; color: #fff; }
+@media (max-width: 1299.98px) { #myCarousel2 .carousel-control.left { left: 0; } #myCarousel2 .carousel-control.right { right: 0; } #myCarousel2 .carousel-item { padding-left: 56px; padding-right: 56px; } }
+/* owner I3: the advantages as four icon points — 2 x 2 below 1200, 4-up from 1200, one column on small phones */
+.tv-adv-intro { max-width: 760px; margin: 0 auto 34px; text-align: center; }
+.tv-adv { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; margin: 0; padding: 0; list-style: none; }
+.tv-adv li { padding: 26px 22px; border: 1px solid #efe3d2; text-align: center; }
+.tv-adv i { font-size: 30px; color: #e09629; }
+.tv-adv h3 { margin: 14px 0 8px; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #1e3953; }
+.tv-adv p { margin: 0; font-size: 14px; line-height: 1.7; }
+@media (max-width: 1199.98px) { .tv-adv { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 479.98px) { .tv-adv { grid-template-columns: 1fr; } }
+/* owner I4: news posts equal height, left-aligned excerpts (v1 justified them into rivers), Read more lined up at the bottom */
+.news-block .row:not(:has(> .blog-view)) { align-items: stretch; }
+.news-block .row > [class*="col-"]:not(.blog-view) { display: flex; flex-direction: column; } /* the home posts only — blog.html's .blog-view rows are image + text side by side */
+.news-block p { text-align: left; }
+.news-block .read-more { margin-top: auto; align-self: flex-start; }
+/* owner final round 1: blog.html's .blog-view columns are not flex, so the auto margin was 0 there — v1's 25px back; on the
+   home posts the tallest card keeps at least that gap above its button */
+.news-block .blog-view .read-more { margin-top: 25px; }
+.news-block .row > [class*="col-"]:not(.blog-view) p:has(+ .read-more) { margin-bottom: 25px; }
+/* v1 stacks a comment's photo above its text below 480 (.media-left / .media-body display: block — table cells in BS3); the
+   kit's .media is a flex row, which ignored that, and the nested reply ran 17px off a 320px screen */
+@media (max-width: 479.98px) { .media { display: block; } }
+/* gallery: v1 spaced only its second row (.offspace-30 on photos 4-6); with two per row below 1200 every row gets the same 30px */
+.gallery-block .row { row-gap: 30px; }
+.gallery-block .row > .offspace-30 { margin-top: 0; }
+/* QA pilot round 2: the photos are 365px at natural size and .img-fluid only shrinks — the wider two-per-row tiles (992-1199)
+   showed a 90px black strip; they fill the tile now */
+.gallery-image img { width: 100%; }
+/* QA pilot rounds 1-2: in the four-column footer (1200+) a two-column list left ~124px a column and "Product & Gifts" wrapped
+   (nowrap made it run into Opening hours) — one column there, at v1's tracking; two columns on tablet / phone, where they fit */
+@media (min-width: 1200px) { .tv-foot-links { columns: 1; } }
+/* service card actions below 1200 (owner pilot round 2): the chip on its own line, Details and Book side by side */
+@media (max-width: 1199.98px) {
+  .service-block-inner .tv-card-meta { display: grid; grid-template-columns: 1fr 1fr; }
+  .service-block-inner .tv-chip { grid-column: 1 / -1; justify-self: start; margin-right: 0; }
+  .service-block-inner .tv-card-btn { text-align: center; }
+}
+.tv-form-note { margin: 12px 0 0; }
+/* buttons on added content, built from v1's own (.action-buttons .btn / .read-more: 1px border, uppercase, 2px tracking, gold on hover) */
+.tv-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 42px; padding: 8px 20px; border: 1px solid #1e3953; border-radius: 0; background: transparent;
+  color: #1e3953; font-size: 14px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color .3s ease, color .3s ease, border-color .3s ease; }
+.tv-btn:hover, .tv-btn:focus-visible { background: #e09629; border-color: #e09629; color: #fff; }
+.tv-btn-solid { background: #e09629; border-color: #e09629; color: #1e3953; font-weight: 600; } /* navy on gold: 4.7:1 (white was 2.5:1) */
+.tv-btn-solid:hover, .tv-btn-solid:focus-visible { background: #1e3953; border-color: #1e3953; color: #fff; }
+.tv-btn-light { border-color: #fff; color: #fff; }
+.tv-btn-light:hover, .tv-btn-light:focus-visible { background: #fff; border-color: #fff; color: #1e3953; }
+/* hero captions (v1's slides had none): left-aligned over a soft shade, clear of the fixed header */
+#myCarousel1 .carousel-item { position: relative; }
+.tv-hero-cap { position: absolute; inset: 0; display: flex; align-items: center; padding-top: 210px; background: linear-gradient(90deg, rgba(0, 0, 0, .55) 0%, rgba(0, 0, 0, .15) 55%, rgba(0, 0, 0, 0) 100%); }
+.tv-hero-cap > .container { width: 100%; }
+.tv-hero-cap-inner { max-width: 560px; color: #fff; }
+.tv-hero-cap h2 { margin: 0 0 14px; font-family: 'Montserrat', sans-serif; font-size: 46px; font-weight: 700; line-height: 1.1; letter-spacing: 3px; text-transform: uppercase; color: #fff; }
+.tv-hero-cap p { margin: 0 0 22px; font-size: 19px; line-height: 1.55; color: #f4efe8; }
+.tv-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+/* the caption clears the fixed header at each width (header: ~205px desktop and tablet, ~120px phone) */
+@media (max-width: 991.98px) { .tv-hero-cap { padding-top: 240px; } .tv-hero-cap h2 { font-size: 30px; } .tv-hero-cap p { font-size: 16px; } }
+/* phone: v1's slide is only ~275px tall under a 155px header — a taller slide cropped to fill, so a caption fits */
+@media (max-width: 767.98px) {
+  #myCarousel1 .carousel-item > img { height: 540px; object-fit: cover; object-position: center top; }
+  .tv-hero-cap { padding-top: 170px; align-items: center; background: linear-gradient(180deg, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, .55) 60%, rgba(0, 0, 0, .7) 100%); }
+  .tv-hero-cap h2 { font-size: 24px; letter-spacing: 2px; } .tv-hero-cap p { font-size: 15px; margin-bottom: 14px; }
+}
+/* the booking panel on v1's banner (owner round 1): heading + reassurances beside a labelled form; stacked below 992 */
+.tv-kicker { margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #e09629; }
+.tv-bookpanel { display: grid; grid-template-columns: 5fr 7fr; gap: 40px; align-items: center; padding: 38px 40px; background: rgba(12, 18, 26, .78); color: #fff; }
+.tv-bookpanel-head h2 { margin: 0 0 14px; font-family: 'Montserrat', sans-serif; font-size: 30px; font-weight: 700; line-height: 1.2; letter-spacing: 2px; text-transform: uppercase; color: #fff; }
+.tv-bookpanel-head p { margin: 0 0 18px; font-size: 16px; line-height: 1.65; color: #eee6da; }
+.tv-bookpanel-head a { color: #e09629; text-decoration: underline; }
+.tv-bookpanel-points { margin: 0; padding: 0; list-style: none; }
+.tv-bookpanel-points li { margin-bottom: 10px; font-size: 15px; color: #fff; }
+.tv-bookpanel-points i { width: 22px; color: #e09629; }
+.tv-bookpanel-form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 18px; }
+.tv-bf-field label { display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #fff; }
+.tv-bf-field .form-control { height: 46px; border: 1px solid rgba(255, 255, 255, .85); border-radius: 0; background: #fff; color: #1e3953; font-size: 15px; box-shadow: none; }
+.tv-bf-field .form-control:focus { border-color: #e09629; box-shadow: 0 0 0 3px rgba(224, 150, 41, .35); }
+.tv-bf-submit { grid-column: 1 / -1; margin: 6px 0 0; }
+.tv-bf-submit .btn { width: 100%; min-height: 48px; background: #e09629; border-color: #e09629; color: #1e3953; font-weight: 600; }
+.tv-bf-submit .btn:hover, .tv-bf-submit .btn:focus-visible { background: #fff; border-color: #fff; color: #1e3953; }
+.tv-bookpanel .tv-form-note { grid-column: 1 / -1; margin: 0; color: #fff; font-weight: 600; }
+@media (max-width: 991.98px) { .tv-bookpanel { grid-template-columns: 1fr; gap: 26px; padding: 30px 26px; } .tv-bookpanel-head h2 { font-size: 24px; } }
+@media (max-width: 575.98px) { .tv-bookpanel { padding: 26px 18px; } .tv-bookpanel-form { grid-template-columns: 1fr; } .tv-bf-field .form-control { font-size: 16px; } }
+/* == /beautica == */

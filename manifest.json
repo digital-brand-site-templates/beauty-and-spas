@@ -1,0 +1,95 @@
+{
+  "category": "fashion-and-beauty",
+  "templates": [
+    {
+      "name": "Beautica",
+      "folder": "beautica",
+      "version": "2.0.0",
+      "description": "Beautica \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "idealFor": [
+        "beauty salons",
+        "hair stylists",
+        "nail and makeup studios"
+      ],
+      "requiredClientInputs": [
+        "salonName",
+        "primaryColorHex",
+        "logoUrl",
+        "bookingEmail"
+      ],
+      "preview": "beautica/preview.png"
+    },
+    {
+      "name": "Beautilicious",
+      "folder": "beautilicious",
+      "version": "2.0.0",
+      "description": "Beautilicious \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "idealFor": [
+        "day spas",
+        "beauty salons",
+        "wellness and massage studios"
+      ],
+      "requiredClientInputs": [
+        "spaName",
+        "primaryColorHex",
+        "logoUrl",
+        "appointmentEmail"
+      ],
+      "preview": "beautilicious/preview.png"
+    },
+    {
+      "name": "Spacelon",
+      "folder": "spacelon",
+      "version": "2.0.0",
+      "description": "Spacelon \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "idealFor": [
+        "beauty salons",
+        "day spas",
+        "barbershops"
+      ],
+      "requiredClientInputs": [
+        "salonName",
+        "primaryColorHex",
+        "logoUrl",
+        "appointmentEmail"
+      ],
+      "preview": "spacelon/preview.png"
+    },
+    {
+      "name": "Stylinto",
+      "folder": "stylinto",
+      "version": "2.0.0",
+      "description": "Stylinto \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "idealFor": [
+        "fashion boutiques",
+        "online clothing stores",
+        "apparel brands"
+      ],
+      "requiredClientInputs": [
+        "storeName",
+        "primaryColorHex",
+        "logoUrl",
+        "contactEmail"
+      ],
+      "preview": "stylinto/preview.png"
+    },
+    {
+      "name": "Timecenter",
+      "folder": "timecenter",
+      "version": "2.0.0",
+      "description": "Timecenter \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "idealFor": [
+        "watch retailers",
+        "jewelry stores",
+        "luxury accessory boutiques"
+      ],
+      "requiredClientInputs": [
+        "storeName",
+        "primaryColorHex",
+        "logoUrl",
+        "contactEmail"
+      ],
+      "preview": "timecenter/preview.png"
+    }
+  ]
+}

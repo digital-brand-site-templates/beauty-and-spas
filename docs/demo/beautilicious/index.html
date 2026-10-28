@@ -1,0 +1,749 @@
+<!--
+Template Name: Beautilicious
+File Name: index.html
+Author Name: ThemeVault
+Author URI: https://www.themevault.net/
+License URI: https://www.themevault.net/license/
+Version: 2.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beautilicious - Spa and Beauty Salon HTML Template</title>
+        <meta name="description" content="A salon and day-spa website template: services, gallery, team, testimonials, blog, prices and online appointments. Built on Bootstrap 5.">
+        <link rel="icon" href="images/icons/favicon.png" type="image/png">
+
+        <!-- Bootstrap 5, the Bootstrap 3 compatibility layer, Font Awesome 6 -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bs3-compat.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+
+        <!-- Template styles (Aileron is self-hosted from fonts/, see the top of style.css) -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body class="cbp-spmenu-push">
+        <div id="page">
+    <header>
+                    <nav class="navbar navbar-expand-md tv-navbar-default fixed-top tv-navbar-fixed-top">
+                        <div class="container">
+                            <div class="top-header">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-4 hidden-xs">
+                                        <div class="social-grid">
+                                            <ul class="list-unstyled">
+                                                <li><a class="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a class="twitter" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a class="google-plus" href="https://www.google.com/" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                                                <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12 text-center">
+                                        <div id="logo"><a href="index.html"><img src="images/logo.png" alt="Beautilicious"></a></div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-4 hidden-xs">
+                                        <form action="blog.html" method="get" role="search" id="search" class="input-group offspace-30 tv-search">
+                                            <label for="site-search" class="visually-hidden">Search the blog</label>
+                                            <input type="search" name="q" id="site-search" placeholder="Search" class="form-control search-box placeholder-fix" autocomplete="off">
+                                            <span class="input-group-btn">
+                                                <button type="submit" class="btn search-button" aria-label="Search"><i class="fas fa-search fa-lg" aria-hidden="true"></i></button>
+                                            </span>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row hide-fix-menu">
+                                <div class="col-lg-12 col-md-12 col-12 hidden-xs">
+                                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-ex1-collapse" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="visually-hidden">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse navbar-ex1-collapse" id="main-menu">
+                                        <ul class="nav navbar-nav">
+                                            <li class="nav-item active"><a href="index.html" class="link-effect nav-link active" aria-current="page">Home</a></li>
+                                            <li class="nav-item"><a href="about.html" class="link-effect nav-link">About</a></li>
+                                            <li class="nav-item"><a href="service.html" class="link-effect nav-link">services</a></li>
+                                            <li class="nav-item"><a href="gallery.html" class="link-effect nav-link">Gallery</a></li>
+                                            <li class="nav-item"><a href="blog.html" class="link-effect nav-link">Blog</a></li>
+                                            <li class="nav-item"><a href="contact.html" class="link-effect nav-link">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /navbar-collapse -->
+                        </div>
+
+                        <button id="showLeft" type="button" class="c-hamburger c-hamburger--htla" aria-controls="cbp-spmenu-s1" aria-expanded="false" aria-label="Open the menu">
+                            <span>toggle menu</span>
+                        </button>
+                    </nav>
+
+                    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1" aria-label="Menu">
+                        <div class="tv-menu-logo text-center"><a href="index.html"><img src="images/logo.png" alt="Beautilicious"></a></div>
+
+                        <ul class="list-unstyled">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li> <a href="about.html">About</a></li>
+                            <li> <a href="service.html">services</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+
+                        <form action="blog.html" method="get" role="search" id="menu-search" class="input-group offspace-30 tv-search">
+                                            <label for="menu-site-search" class="visually-hidden">Search the blog</label>
+                                            <input type="search" name="q" id="menu-site-search" placeholder="Search" class="form-control search-box placeholder-fix" autocomplete="off">
+                                            <span class="input-group-btn">
+                                                <button type="submit" class="btn search-button" aria-label="Search"><i class="fas fa-search fa-lg" aria-hidden="true"></i></button>
+                                            </span>
+                                        </form>
+                        <div class="cp-menu-footer-social-icon offspace-30">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.google.com/" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+                            <a href="https://www.behance.net/" target="_blank" rel="noopener" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
+                        </div>
+                    </nav>
+
+                    <div class="clearfix"></div>
+                </header>
+
+            <!--end-->
+            <div id="myCarousel1" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active"> <img src="images/banner.jpg" class="w-100" alt="">
+                        <div class="tv-hero">
+                            <div class="container">
+                                <h2>Hair, skin, nails and spa, under one roof</h2>
+                                <p>Twelve stylists and therapists, seven days a week. Walk in, or book a chair in a minute.</p>
+                                <div class="tv-hero-actions">
+                                    <a class="btn tv-btn tv-btn-gold" href="appointment.html">book an appointment</a>
+                                    <a class="btn tv-btn tv-btn-light" href="prices.html">see prices</a>
+                                </div>
+                            </div>
+                        </div> </div>
+                    <div class="carousel-item"> <img src="images/banner2.jpg" class="w-100" alt="">
+                        <div class="tv-hero">
+                            <div class="container">
+                                <h2>A quiet morning, all to yourself</h2>
+                                <p>Half-day and full-day packages: massage, facial, manicure and pedicure, with lunch in the lounge.</p>
+                                <div class="tv-hero-actions">
+                                    <a class="btn tv-btn tv-btn-gold" href="appointment.html">book an appointment</a>
+                                    <a class="btn tv-btn tv-btn-light" href="prices.html">see prices</a>
+                                </div>
+                            </div>
+                        </div> </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel1" data-bs-slide="prev">
+                    <span class="tv-arrow tv-arrow-left" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel1" data-bs-slide="next">
+                    <span class="tv-arrow tv-arrow-right" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="location-address">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="location-address-title">
+                                <ul class="list-unstyled">
+                                    <li><a href="tel:+1-202-555-0100"><i class="fas fa-phone fa-lg"></i><span>+1-202-555-0100</span></a></li>
+                                    <li><a href="mailto:demo@info.com"><i class="fas fa-envelope"></i><span> demo@info.com</span></a></li>
+                                    <li><p><i class="fas fa-location-arrow fa-lg"></i> <span>701 Old York Drive Richmond USA.</span></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="what-we-do-block section-padding-small">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12 text-center">
+                            <div class="text-head">
+                                <h2>what we do</h2>
+                                <hr class="dark-line">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row offspace-90">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <p class="desc-text">We are a full-service salon and day spa with twelve stylists and therapists, open seven days a week. Every visit starts with a consultation: what you want, what your hair or skin needs, and how long it takes. Our colourists train every season, and every colour we use is ammonia-free and tested on nobody. Two minutes from the station.</p>
+                            <p class="desc-text">Every visit starts with a consultation: what you want, what your hair or skin needs, and how long it takes. Our colourists train every season, and every colour we use is ammonia-free and tested on nobody. Walk-ins are welcome when there is a free chair, which is most weekday mornings.</p>
+                            <p class="desc-text">Our colourists train every season, and every colour we use is ammonia-free and tested on nobody. The spa has four treatment rooms, a steam room and a quiet lounge with tea and no phones. Gift cards available.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 mobile-view-offspace-20">
+                            <img alt="image" class="img-fluid" src="images/about.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </section>
+
+            <section class="service-block section-padding-small">
+                <div class="bg-color">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-12 text-center">
+                                <div class="text-head">
+                                    <h2 class="text-light">our services</h2>
+                                    <hr class="light-line">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row offspace-90">
+                            <div class="col-lg-3 col-md-3 col-12 width-set-50">
+                                <a class="tv-service-tile" href="service-details.html">
+                                    <span class="service-image"><img class="img-fluid" src="images/service1.png" alt=""></span>
+                                    <h3>cutting</h3>
+                                    <p>Cut, wash and finish by a senior stylist. Every cut starts with a consultation.</p>
+                                    <span class="tv-service-price">from $55</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-12 width-set-50">
+                                <a class="tv-service-tile" href="service-details.html">
+                                    <span class="service-image"><img class="img-fluid" src="images/service2.png" alt=""></span>
+                                    <h3>massage</h3>
+                                    <p>Swedish, deep-tissue and hot stone, in four quiet treatment rooms.</p>
+                                    <span class="tv-service-price">from $75</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-12 width-set-50">
+                                <a class="tv-service-tile" href="service-details.html">
+                                    <span class="service-image"><img class="img-fluid" src="images/service3.png" alt=""></span>
+                                    <h3>colour</h3>
+                                    <p>Balayage, highlights and full-head colour with ammonia-free lines.</p>
+                                    <span class="tv-service-price">from $120</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-12 width-set-50">
+                                <a class="tv-service-tile" href="service-details.html">
+                                    <span class="service-image"><img class="img-fluid" src="images/service4.png" alt=""></span>
+                                    <h3>facial</h3>
+                                    <p>Express, deep-cleanse and anti-ageing facials, plus brows and make-up.</p>
+                                    <span class="tv-service-price">from $45</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="appointment-block section-padding-small">
+                <div class="appointment-block-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-12">
+                                <h3>impressed with us ?</h3>
+                                <p>Book online in a minute, or call the desk. First-time clients get 10% off their first treatment.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12 text-end set-center">
+                                <a href="appointment.html" class="appointement-link-btn">Get An Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </section>
+
+            <section class="gallery-block section-padding-small">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12 text-center">
+                            <div class="text-head">
+                                <h2>gallery</h2>
+                                <hr class="dark-line">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row offspace-90">
+                        <div class="w-100 px-0"><div class="effects clearfix" id="effect-5">
+                            <div class="col-lg-3 col-md-4 col-12 width-set-50">
+                                <div class="img">
+                                    <img alt="gallery-image" src="images/gallery1.png" class="img-fluid">
+                                    <div class="overlay">
+                                        <a data-image-popup class="expand" href="images/gallery1.png" aria-label="View larger">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12 width-set-50">
+                                <div class="img">
+                                    <img alt="gallery-image" src="images/gallery2.png" class="img-fluid">
+                                    <div class="overlay">
+                                        <a data-image-popup class="expand" href="images/gallery2.png" aria-label="View larger">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12 width-set-50">
+                                <div class="img">
+                                    <img alt="gallery-image" src="images/gallery3.png" class="img-fluid">
+                                    <div class="overlay">
+                                        <a data-image-popup class="expand" href="images/gallery3.png" aria-label="View larger">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12 width-set-50">
+                                <div class="img">
+                                    <img alt="gallery-image" src="images/gallery4.png" class="img-fluid">
+                                    <div class="overlay">
+                                        <a data-image-popup class="expand" href="images/gallery4.png" aria-label="View larger">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12 width-set-50">
+                                <div class="img">
+                                    <img alt="gallery-image" src="images/gallery5.png" class="img-fluid">
+                                    <div class="overlay">
+                                        <a data-image-popup class="expand" href="images/gallery5.png" aria-label="View larger">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12 width-set-50">
+                                <div class="img">
+                                    <img alt="gallery-image" src="images/gallery6.png" class="img-fluid">
+                                    <div class="overlay">
+                                        <a data-image-popup class="expand" href="images/gallery6.png" aria-label="View larger">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12 width-set-50">
+                                <div class="img">
+                                    <img alt="gallery-image" src="images/gallery7.png" class="img-fluid">
+                                    <div class="overlay">
+                                        <a data-image-popup class="expand" href="images/gallery7.png" aria-label="View larger">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12 width-set-50">
+                                <div class="img">
+                                    <img alt="gallery-image" src="images/gallery8.png" class="img-fluid">
+                                    <div class="overlay">
+                                        <a data-image-popup class="expand" href="images/gallery8.png" aria-label="View larger">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </section>
+
+            <section class="statistic-block section-padding-small">
+                <div class="bg-color">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-12 text-center">
+                                <div class="text-head">
+                                    <h2 class="text-light">our statistics</h2>
+                                    <hr class="light-line">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center offspace-40">
+                            <div class="col-lg-3 col-md-3 col-12 width-set-50">
+                                <div class="information hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                                    <div class="icon-block"><a class="hi-icon"><img src="images/icons/hairdresser-drying-the-hair.png"></a></div>
+                                    <h1 class="counter" data-slno='1' data-min='0' data-max='400' data-delay='8' data-increment=1>400</h1>
+                                    <h5>happy clients</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-12 width-set-50">
+                                <div class="information hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                                    <div class="icon-block"><a class="hi-icon"><img src="images/icons/trophy.png"></a></div>
+                                    <h1 class="counter" data-slno='1' data-min='0' data-max='100' data-delay='8' data-increment=1>100</h1>
+                                    <h5>awards received</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-12 width-set-50">
+                                <div class="information hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                                    <div class="icon-block"><a class="hi-icon"><img src="images/icons/man-thinking.png"></a></div>
+                                    <h1 class="counter" data-slno='1' data-min='0' data-max='1400' data-delay='8' data-increment=1>1400</h1>
+                                    <h5>questions answered</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-12 width-set-50">
+                                <div class="information hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                                    <div class="icon-block"><a class="hi-icon"><img src="images/icons/task-complete.png"></a></div>
+                                    <h1 class="counter" data-slno='1' data-min='0' data-max='200' data-delay='8' data-increment=1>200</h1>
+                                    <h5>completed projects</h5>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </section>
+
+            <section class="team-block section-padding-small">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12 text-center">
+                            <div class="text-head">
+                                <h2>our team</h2>
+                                <hr class="dark-line">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row offspace-90">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="owl-carousel owl-theme" data-owl='{"items":1,"loop":false,"nav":true,"dots":true,"margin":20,"responsive":{"0":1,"600":2,"760":3,"1000":4},"speed":250}'>
+                                <div class="tv-owl-item">
+                                    <div class="team-image">
+                                        <a href="team-member.html" aria-hidden="true" tabindex="-1"><img src="images/team2.png" class="img-fluid" alt=""></a>
+                                        <div class="overlay">
+                                            <h3><a href="team-member.html">David King</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="tv-team-caption">
+                                        <h4><a href="team-member.html">David King</a></h4>
+                                        <p>Senior stylist</p>
+                                    </div>
+                                    <div class="overlay-social-icon">
+                                        <ul class="list-unstyled">
+                                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                            <li><a class="twitter" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a class="google-plus" href="https://www.google.com/" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                                            <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tv-owl-item">
+                                    <div class="team-image">
+                                        <a href="team-member.html" aria-hidden="true" tabindex="-1"><img src="images/team3.png" class="img-fluid" alt=""></a>
+                                        <div class="overlay">
+                                            <h3><a href="team-member.html">John Klok</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="tv-team-caption">
+                                        <h4><a href="team-member.html">John Klok</a></h4>
+                                        <p>Colourist</p>
+                                    </div>
+                                    <div class="overlay-social-icon">
+                                        <ul class="list-unstyled">
+                                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                            <li><a class="twitter" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a class="google-plus" href="https://www.google.com/" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                                            <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tv-owl-item">
+                                    <div class="team-image">
+                                        <a href="team-member.html" aria-hidden="true" tabindex="-1"><img src="images/team4.png" class="img-fluid" alt=""></a>
+                                        <div class="overlay">
+                                            <h3><a href="team-member.html">Walter Hucko</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="tv-team-caption">
+                                        <h4><a href="team-member.html">Walter Hucko</a></h4>
+                                        <p>Stylist</p>
+                                    </div>
+                                    <div class="overlay-social-icon">
+                                        <ul class="list-unstyled">
+                                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                            <li><a class="twitter" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a class="google-plus" href="https://www.google.com/" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                                            <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tv-owl-item">
+                                    <div class="team-image">
+                                        <a href="team-member.html" aria-hidden="true" tabindex="-1"><img src="images/team2.png" class="img-fluid" alt=""></a>
+                                        <div class="overlay">
+                                            <h3><a href="team-member.html">Pedro Araez</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="tv-team-caption">
+                                        <h4><a href="team-member.html">Pedro Araez</a></h4>
+                                        <p>Barber</p>
+                                    </div>
+                                    <div class="overlay-social-icon">
+                                        <ul class="list-unstyled">
+                                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                            <li><a class="twitter" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a class="google-plus" href="https://www.google.com/" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                                            <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tv-owl-item">
+                                    <div class="team-image">
+                                        <a href="team-member.html" aria-hidden="true" tabindex="-1"><img src="images/team3.png" class="img-fluid" alt=""></a>
+                                        <div class="overlay">
+                                            <h3><a href="team-member.html">Odilian Goss</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="tv-team-caption">
+                                        <h4><a href="team-member.html">Odilian Goss</a></h4>
+                                        <p>Spa therapist</p>
+                                    </div>
+                                    <div class="overlay-social-icon">
+                                        <ul class="list-unstyled">
+                                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                            <li><a class="twitter" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a class="google-plus" href="https://www.google.com/" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                                            <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tv-owl-item">
+                                    <div class="team-image">
+                                        <a href="team-member.html" aria-hidden="true" tabindex="-1"><img src="images/team4.png" class="img-fluid" alt=""></a>
+                                        <div class="overlay">
+                                            <h3><a href="team-member.html">Eugene Krist</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="tv-team-caption">
+                                        <h4><a href="team-member.html">Eugene Krist</a></h4>
+                                        <p>Nail technician</p>
+                                    </div>
+                                    <div class="overlay-social-icon">
+                                        <ul class="list-unstyled">
+                                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                            <li><a class="twitter" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a class="google-plus" href="https://www.google.com/" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                                            <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </section>
+
+            <section class="testimonial-block section-padding-small">
+                <div class="bg-color">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-12 text-center">
+                                <div class="text-head">
+                                    <h2 class="text-light">Testimonial</h2>
+                                    <hr class="light-line">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row offspace-40">
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div data-bs-ride="carousel" class="carousel slide" id="myCarousel2">
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <blockquote class="tv-quote">
+                                                <div class="testimonial-image"><img class="img-fluid" src="images/testimonial1.png" alt=""></div>
+                                                <p>The spa has four treatment rooms, a steam room and a quiet lounge with tea and no phones. Massage, facials, manicures and pedicures can be booked together as a half-day or a full day. Bridal parties get the salon to themselves on a Sunday morning, with breakfast included. Ask for the same stylist every time; we keep notes so the colour matches.</p>
+                                                <h4><a class="tv-nolink">alex blackwell</a></h4>
+                                            </blockquote>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <blockquote class="tv-quote">
+                                                <div class="testimonial-image"><img class="img-fluid" src="images/testimonial2.png" alt=""></div>
+                                                <p>Massage, facials, manicures and pedicures can be booked together as a half-day or a full day. Bridal parties get the salon to themselves on a Sunday morning, with breakfast included. We use products we would use on ourselves, and we tell you what we used so you can keep it up at home. Gift cards are available for any amount and never expire.</p>
+                                                <h4><a class="tv-nolink">alex blackwell</a></h4>
+                                            </blockquote>
+                                        </div>
+
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                    <span class="tv-arrow tv-arrow-left-white" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                    <span class="tv-arrow tv-arrow-right-white" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog-block section-padding-small">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12 text-center">
+                            <div class="text-head">
+                                <h2>our blog</h2>
+                                <hr class="dark-line">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row offspace-70">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <span class="top-date">30 <br>DEC</span>
+                            <div class="event-image">
+                                <a href="single-blog.html"><img src="images/blogimage1.png" class="img-fluid"></a>
+                            </div>
+                            <div class="blog-views">
+                                <!-- Left-aligned -->
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading event-title"><a href="single-blog.html"> Five minutes to better skin </a></h4>
+                                        <ul class="list-unstyled">
+                                            <li><a href="blog.html?q=category"><i class="fas fa-tags" aria-hidden="true"></i><span>category</span></a> <a href="single-blog.html#comments"><i class="far fa-comments fa-lg" aria-hidden="true"></i><span>Comments</span></a> <span class="tv-meta"><i class="far fa-calendar" aria-hidden="true"></i><span>APR 26, 2017</span></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-desc">
+                                <p>Bridal parties get the salon to themselves on a Sunday morning, with breakfast included. We use products we would use on ourselves, and we tell you what we used so you can keep it up at home. Book online, by phone or at the desk; cancel up to twenty-four hours ahead at no charge. First-time clients get a free consultation and ten per cent off their first treatment. Gift cards are available for any amount and never expire. Parking is free behind the building, and we are two minutes from the station. Two minutes from the station.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="appointment-block section-padding-small">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12 text-center">
+                            <div class="text-head">
+                                <h2>make an appointment</h2>
+                                <hr class="dark-line">
+                            </div>
+                        </div>
+                    </div>
+                    <form id="BookForm" class="offspace-70" action="#" method="post" novalidate>
+                        <div class="row">
+                            <div class="w-100 px-0"><div class="book-form">
+                                <div class="offset-lg-1 col-lg-5 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="name" class="visually-hidden">First name</label>
+                                        <input type="text" id="name" name="name" class="form-control placeholder-fix" placeholder="first name" required autocomplete="given-name">
+                                        <p class="form-text text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="contact" class="visually-hidden">Contact number</label>
+                                        <input type="tel" id="contact" name="phone" class="form-control placeholder-fix" placeholder="contact number :" required autocomplete="tel">
+                                        <p class="form-text text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-5 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="email" class="visually-hidden">Email</label>
+                                        <input type="email" id="email" name="email" class="form-control placeholder-fix" placeholder="Email :" required autocomplete="email">
+                                        <p class="form-text text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-5 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="date" class="visually-hidden">Date</label>
+                                        <input type="text" id="date" name="date" class="form-control placeholder-fix" placeholder="date from :" required>
+                                        <p class="form-text text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-10 col-md-12 col-12">
+                                    <div class="form-group">
+                                        <label for="message" class="visually-hidden">Message</label>
+                                        <textarea name="message" id="message" class="form-control placeholder-fix" rows="4" placeholder="Message :" required></textarea>
+                                        <p class="form-text text-danger"></p>
+                                    </div>
+                                </div>
+                            </div></div>
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="action-buttons text-center">
+                                    <button type="submit" class="btn">Send</button>
+                                    <p class="tv-form-note" hidden tabindex="-1">Thank you — your request has been sent. We confirm every appointment by phone within a few hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+
+    <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-12 width-50 width-set-50">
+                                <div class="footer-details">
+                                    <h4>quick links</h4>
+                                    <ul class="list-unstyled footer-links">
+                                        <li class="active"><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="service.html">Services</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li> <a href="blog.html">Blog</a></li>
+                                        <li> <a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12 width-set-50">
+                                <div class="footer-details"><h4>working hours</h4>
+                                    <ul class="list-unstyled time-schedule-list">
+                                        <li><span>week days : 8am - 10pm</span></li>
+                                        <li><span>Saturday : 8am - 5pm</span></li>
+                                        <li class="change-col"><span>Sunday : Closed</span></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-social-icon offspace-70">
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="https://www.google.com/" target="_blank" rel="noopener" aria-label="Google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+                                    <a href="https://www.behance.net/" target="_blank" rel="noopener" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-5 col-12 insta-block">
+                                <div class="footer-details">
+                                    <h4>Now On Instagram</h4>
+                                    <div class="row">
+                                        <div class="instagram-images">
+                                            <div id="instafeed">
+                                                <div class="col-lg-4 col-md-4 col-4"><div class="insta-image"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/gallery1.png" alt=""><div class="likes">&hearts; 128</div></a></div></div>
+                                                <div class="col-lg-4 col-md-4 col-4"><div class="insta-image"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/gallery2.png" alt=""><div class="likes">&hearts; 96</div></a></div></div>
+                                                <div class="col-lg-4 col-md-4 col-4"><div class="insta-image"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/gallery3.png" alt=""><div class="likes">&hearts; 143</div></a></div></div>
+                                                <div class="col-lg-4 col-md-4 col-4"><div class="insta-image"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/gallery4.png" alt=""><div class="likes">&hearts; 87</div></a></div></div>
+                                                <div class="col-lg-4 col-md-4 col-4"><div class="insta-image"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/gallery5.png" alt=""><div class="likes">&hearts; 112</div></a></div></div>
+                                                <div class="col-lg-4 col-md-4 col-4"><div class="insta-image"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/gallery6.png" alt=""><div class="likes">&hearts; 154</div></a></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="copyright">
+                            &copy; 2017 All right reserved.
+                        </div>
+
+                    </div>
+                </footer>
+            <!--back to top--->
+            <button type="button" class="scrollTop back-to-top" id="back-to-top" aria-label="Back to top">
+                <span><i aria-hidden="true" class="fas fa-angle-up fa-lg"></i></span>
+                <span>Top</span>
+            </button>
+
+        </div>
+
+        <!-- Bootstrap 5 and the template's own script (no jQuery, Owl, Magnific, counterUp, waypoints, inview, modernizr, classie, instafeed) -->
+        <script src="js/bootstrap.bundle.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </body>
+</html>

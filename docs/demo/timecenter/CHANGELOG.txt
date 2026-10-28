@@ -1,0 +1,23 @@
+Timecenter - Changelog
+
+Version 2.0
+- A completely new look, "Atelier": Cormorant Garamond and Manrope type, petrol and brass on warm paper, square hairline buttons and rule-framed product cards
+- New split header with a centred logo, a utility strip (language, currency, social) and a search drawer; the bar pins and slims down past 150px, as in version 1
+- Home hero rebuilt as full-bleed photo slides behind a brass bezel ring with a stepping seconds hand
+- Live world clocks for five cities in the footer
+- Rebuilt on Bootstrap 5 with every behaviour in plain JavaScript; no third-party script libraries left to load
+- Product page: hover zoom, thumbnail gallery, lightbox that steps through every photo, qty stepper, specification grid, Description and Reviews tabs with a working review form
+- Quick view popup on every product card
+- Shop pages: category index with counts and fold-out styles, Refine Search, list / grid views, compare count, sort and show
+- Cart: qty steppers with live line totals, coupon and gift certificate panels, a compact card layout on phones
+- Checkout: all six steps kept, a sticky order summary, finished steps marked, every required field validated and the step opened for you
+- New pages: About, Contact (with delivery, returns, privacy, terms, gift voucher and affiliate sections), Wish List, Order Complete, Forgot Password and 404
+- Five HTML emails ready to send: order confirmation, welcome, contact auto-reply, password reset and newsletter welcome
+- Every form is labelled, validates and confirms in place
+- Placeholder text replaced with real copy, and prices and totals that add up
+- All photos replaced with licensed, brand-free watch photography (credits in PHOTO-CREDITS.txt); the real trademark logos in Top Brands replaced with invented watch houses
+- Meta descriptions and a language attribute on every page; home.html now forwards to index.html
+- Responsive from 320px phones to wide desktops, with two-column tablet grids and no sideways scrolling
+
+Version 1.0
+- Initial release

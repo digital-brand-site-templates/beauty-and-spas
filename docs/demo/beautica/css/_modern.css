@@ -1,0 +1,54 @@
+/* Beautica modern layer — everything scoped under body.tv-modern; removing the class restores the v1 look.
+   Agreed scope (owner, 2026-09-27): a removable refresh keeping v1's gold (#e09629) and navy (#1e3953). */
+
+body.tv-modern { --tv-gold: #e09629; --tv-navy: #1e3953; --tv-radius: 14px; --tv-shadow: 0 14px 34px rgba(30, 57, 83, .14); }
+
+/* header: the stuck state slides in with a shadow */
+body.tv-modern .navbar-fixed-top.top-nav-collapse { box-shadow: 0 8px 26px rgba(0, 0, 0, .28); }
+
+/* buttons: pills, on v1's own and on the added ones */
+body.tv-modern .tv-btn, body.tv-modern .tv-book-btn, body.tv-modern .action-buttons .btn, body.tv-modern .read-more { border-radius: 999px; }
+body.tv-modern .action-buttons .btn, body.tv-modern .read-more { padding-left: 24px; padding-right: 24px; }
+
+/* service cards: rounded, lifted, and readable — v1's green card had white text at 2.2:1 */
+body.tv-modern .service-block-inner [class*="section-"] { border-radius: var(--tv-radius); box-shadow: var(--tv-shadow); overflow: hidden; }
+body.tv-modern .service-block-inner > [class*="col-"] { padding: 12px; }
+body.tv-modern .bg-light-green { background-color: #177a47; } /* v1 #2cc972 -> white text 5.4:1 */
+body.tv-modern .tv-card-btn { border-radius: 999px; }
+/* QA pilot round 1: white chip / Details on the orange card read 3.5:1 — a dark tint behind them (about 5:1) */
+body.tv-modern .bg-orange .tv-chip, body.tv-modern .bg-orange .tv-card-btn:not(.tv-card-btn-solid) { background: rgba(0, 0, 0, .22); }
+body.tv-modern .service-block-inner .heading-top .right-side img { box-sizing: content-box; padding: 10px; border-radius: 50%; background: rgba(255, 255, 255, .16); }
+body.tv-modern .tv-bookpanel { border-radius: 20px; box-shadow: 0 20px 50px rgba(0, 0, 0, .35); backdrop-filter: blur(4px); }
+
+/* quick booking band: rounded fields with a gold focus ring */
+body.tv-modern .booking-form-block .form-control { border-radius: 10px; }
+body.tv-modern .form-control:focus { border-color: var(--tv-gold); box-shadow: 0 0 0 3px rgba(224, 150, 41, .3); outline: 0; }
+
+/* testimonials: the photo in a gold ring */
+body.tv-modern #myCarousel2 .carousel-item img { border-radius: 50%; box-shadow: 0 0 0 5px #fff, 0 0 0 7px var(--tv-gold); }
+
+/* staff, gallery and news photos: soft corners and a lift */
+body.tv-modern .staff-image, body.tv-modern .gallery-image, body.tv-modern .news-image { border-radius: var(--tv-radius); overflow: hidden; box-shadow: var(--tv-shadow); }
+body.tv-modern .news-block h5 { color: #6b6b6b; } /* v1's date line was 2.5:1 on white */
+body.tv-modern .news-block .row > .col-12:not(.blog-view) { margin-bottom: 26px; }
+
+/* owner I2: the four counters 2 x 2 on phones (one per row made an 883px dark band at 412) */
+@media (max-width: 767.98px) {
+  body.tv-modern .counter-block .row > .width-set-50 { flex: 0 0 50%; width: 50%; max-width: 50%; }
+}
+body.tv-modern .tv-adv li { border-radius: var(--tv-radius); box-shadow: var(--tv-shadow); border-color: transparent; }
+
+/* type and spacing on tablet and phone */
+@media (max-width: 991.98px) {
+  body.tv-modern .about-block p, body.tv-modern .advantage-block p, body.tv-modern .news-block p { font-size: 15px; line-height: 1.75; }
+  body.tv-modern .service-block-inner [class*="section-"] p { line-height: 1.7; }
+}
+@media (max-width: 767.98px) {
+  body.tv-modern .block-heading { margin-bottom: 26px; }
+  body.tv-modern .staff-block .col-12, body.tv-modern .gallery-block .col-12 { margin-bottom: 18px; }
+  body.tv-modern .booking-form-block .form-control { font-size: 16px; } /* 16px stops iOS zooming into the field */
+}
+
+/* final QA round 1: the remaining square buttons join the pills */
+body.tv-modern .tv-price-book, body.tv-modern .tv-chips button, body.tv-modern .contact-form .btn, body.tv-modern .comment-form .submit-btn,
+body.tv-modern .submit-btn { border-radius: 999px; }

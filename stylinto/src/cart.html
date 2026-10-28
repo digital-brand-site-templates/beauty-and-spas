@@ -1,0 +1,344 @@
+<!--
+Template Name: StylInto
+File Name: cart.html
+Author Name: ThemeVault
+Author URI: https://www.themevault.net/
+License URI: https://www.themevault.net/license/
+Version: 2.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StylInto</title>
+        <meta name="description" content="Your Stylinto shopping cart.">
+        <link rel="icon" href="images/favicon.png"/>
+
+        <!-- Bootstrap 5, Font Awesome 6, then v1's own stylesheets in v1's order -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bs3-defaults.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <link href="css/bs5-shim.css" rel="stylesheet">
+        <link href="css/_modern.css" rel="stylesheet">
+        <link href="css/design.css" rel="stylesheet">
+    </head>
+    <body class="tv-preload">
+
+        <a class="visually-hidden-focusable sx-skip" href="#sx-main">Skip to content</a>
+        <div class="sx-topbar">
+            <div class="sx-wrap sx-topbar__in">
+                <div class="sx-topbar__left">
+                    <a class="sx-topbar__phone" href="tel:+12025550100"><i class="fas fa-phone" aria-hidden="true"></i> +1-202-555-0100</a>
+                    <ul class="sx-social sx-social--top">
+                        <li><a class="tv-nohref" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a class="tv-nohref" aria-label="X (Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a></li>
+                        <li><a class="tv-nohref" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a class="tv-nohref" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <p class="sx-topbar__msg">Free shipping on orders over $75 &nbsp;·&nbsp; 30-day easy returns</p>
+                <div class="sx-topbar__right">
+                    <div class="dropdown sx-pick">
+                        <button type="button" class="sx-pick__btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">English</button>
+                        <ul class="dropdown-menu dropdown-menu-end sx-menu">
+                            <li><a class="tv-nohref dropdown-item">Chinese</a></li>
+                            <li><a class="tv-nohref dropdown-item">French</a></li>
+                            <li><a class="tv-nohref dropdown-item">Spanish</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown sx-pick">
+                        <button type="button" class="sx-pick__btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Rupees</button>
+                        <ul class="dropdown-menu dropdown-menu-end sx-menu">
+                            <li><a class="tv-nohref dropdown-item">US Dollar</a></li>
+                            <li><a class="tv-nohref dropdown-item">Rupees</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="sx-header sticky-top" id="sx-header">
+            <div class="sx-wrap sx-header__in">
+                <button type="button" class="navbar-toggler sx-burger" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="sx-nav" aria-label="Main">
+                    <div class="collapse navbar-collapse sx-nav__panel" id="myNavbar">
+                        <form class="sx-search sx-search--panel" role="search" action="product.html">
+                            <label class="visually-hidden" for="sx-search-m">Search</label>
+                            <input type="search" id="sx-search-m" name="search" placeholder="Search dresses, denim, knits…">
+                            <button type="submit" aria-label="Search"><i class="fas fa-magnifying-glass" aria-hidden="true"></i></button>
+                        </form>
+                        <ul class="navbar-nav sx-nav__list">
+                            <li class="nav-item dropdown sx-cat">
+                                <button type="button" class="nav-link sx-cat__btn" data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-display="static" aria-expanded="false">
+                                    <i class="fas fa-bars-staggered" aria-hidden="true"></i> Category
+                                </button>
+                                <div class="dropdown-menu sx-mega mega-menu">
+                                    <div class="box-category sx-mega__list">
+                                        <p class="sx-eyebrow">Shop by category</p>
+                                        <ul class="menu">
+                                            <li><a href="product.html">Antic images</a></li>
+                                            <li class="sx-has-sub">
+                                                <a href="product.html">Men</a>
+                                                <i class="fas fa-plus" role="button" tabindex="0" aria-expanded="false" aria-label="Show Men categories"></i>
+                                                <ul class="menu-inner" hidden>
+                                                    <li><a href="product.html">Jeans</a></li>
+                                                    <li><a href="product.html">T-shirts</a></li>
+                                                    <li><a href="product.html">Shirts</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sx-has-sub">
+                                                <a href="product.html">Women</a>
+                                                <i class="fas fa-plus" role="button" tabindex="0" aria-expanded="false" aria-label="Show Women categories"></i>
+                                                <ul class="menu-inner" hidden>
+                                                    <li><a href="product.html">Jeans</a></li>
+                                                    <li><a href="product.html">T-shirts</a></li>
+                                                    <li><a href="product.html">Shirts</a></li>
+                                                    <li><a href="product.html">Kurtas &amp; Kurtis</a></li>
+                                                    <li><a href="product.html">Leggings</a></li>
+                                                    <li><a href="product.html">Dresses</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sx-has-sub">
+                                                <a href="product.html">Children</a>
+                                                <i class="fas fa-plus" role="button" tabindex="0" aria-expanded="false" aria-label="Show Children categories"></i>
+                                                <ul class="menu-inner" hidden>
+                                                    <li><a href="product.html">Frocks</a></li>
+                                                    <li><a href="product.html">Sets &amp; suits</a></li>
+                                                    <li><a href="product.html">Shirts</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a class="sx-mega__promo" href="product.html">
+                                        <img src="images/fashion1.jpg" alt="Red belted dress from the new season edit" loading="lazy">
+                                        <span><em>The new season edit</em> Shop now <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">My Account</a>
+                                <ul class="dropdown-menu sx-menu">
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                    <li><a class="dropdown-item" href="account.html">Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <a class="sx-logo" href="index.html" aria-label="Stylinto home">Stylinto<span aria-hidden="true">.</span></a>
+                <div class="sx-actions">
+                    <form class="sx-search sx-search--bar" role="search" action="product.html">
+                        <label class="visually-hidden" for="sx-search">Search</label>
+                        <input type="search" id="sx-search" name="search" placeholder="Search">
+                        <button type="submit" aria-label="Search"><i class="fas fa-magnifying-glass" aria-hidden="true"></i></button>
+                    </form>
+                    <a class="sx-icon sx-icon--account" href="login.html" aria-label="My account"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
+                    <a class="sx-icon" href="wishlist.html" aria-label="Wishlist"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
+                    <a class="sx-icon sx-icon--cart" href="cart.html" aria-label="Cart, 0 items"><i class="fas fa-bag-shopping" aria-hidden="true"></i><span class="sx-badge">0</span></a>
+                </div>
+            </div>
+        </header>
+        <main id="sx-main">
+            <section class="sx-pagehead ">
+                <div class="sx-wrap">
+                    <nav aria-label="Breadcrumb"><ol class="sx-crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Shopping cart</li></ol></nav>
+                    <p class="sx-eyebrow">Your bag</p>
+                    <h1 class="sx-pagehead__title">Shopping Cart <span class="sx-pagehead__meta">(0.00kg)</span></h1>
+                    
+                    <ol class="sx-steps" aria-label="Checkout progress"><li class="is-current">Cart</li><li>Details</li><li>Delivery</li><li>Payment</li></ol>
+                </div>
+            </section>
+
+            <section class="sx-cart">
+                <div class="sx-wrap sx-cart__in">
+                    <div class="sx-cart__main">
+                        <form class="sx-cart__items" aria-label="Items in your cart">
+                            <div class="sx-cart__labels" aria-hidden="true"><span>Product</span><span>Quantity</span><span>Unit Price</span><span>Total</span></div>
+                            <article class="sx-line">
+                                <a class="sx-line__img" href="single-product.html" tabindex="-1" aria-hidden="true"><img src="images/pro4.jpg" alt="" width="260" height="280" loading="lazy"></a>
+                                <div class="sx-line__info">
+                                    <p class="sx-line__name"><a href="single-product.html">Girls Top</a></p>
+                                    <p class="sx-line__meta">Size M · Sand<br>Model: Product 16 · <small>Reward Points: 600</small></p>
+                                </div>
+                                <div class="sx-line__qty">
+                                    <div class="sx-qty"><button type="button" data-sx-qty="-1" aria-label="Decrease quantity"><i class="fas fa-minus" aria-hidden="true"></i></button><label class="visually-hidden" for="cart-qty-0">Quantity</label><input type="number" id="cart-qty-0" name="quantity[0]" value="2" min="1" max="20" inputmode="numeric"><button type="button" data-sx-qty="1" aria-label="Increase quantity"><i class="fas fa-plus" aria-hidden="true"></i></button></div>
+                                    <button type="submit" class="sx-line__btn" aria-label="Update Girls Top"><i class="fas fa-arrows-rotate" aria-hidden="true"></i></button>
+                                    <button type="button" class="sx-line__btn" data-sx-remove aria-label="Remove Girls Top"><i class="fas fa-xmark" aria-hidden="true"></i></button>
+                                </div>
+                                <p class="sx-line__unit"><span class="sx-line__lbl">Unit Price</span> $35.00</p>
+                                <p class="sx-line__total"><span class="sx-line__lbl">Total</span> $70.00</p>
+                            </article>
+                            <article class="sx-line">
+                                <a class="sx-line__img" href="single-product.html" tabindex="-1" aria-hidden="true"><img src="images/pro7.jpg" alt="" width="260" height="280" loading="lazy"></a>
+                                <div class="sx-line__info">
+                                    <p class="sx-line__name"><a href="single-product.html">Plum Peasant Blouse</a></p>
+                                    <p class="sx-line__meta">Size S · Plum<br>Model: Product 10 · <small>Reward Points: 600</small></p>
+                                </div>
+                                <div class="sx-line__qty">
+                                    <div class="sx-qty"><button type="button" data-sx-qty="-1" aria-label="Decrease quantity"><i class="fas fa-minus" aria-hidden="true"></i></button><label class="visually-hidden" for="cart-qty-1">Quantity</label><input type="number" id="cart-qty-1" name="quantity[1]" value="1" min="1" max="20" inputmode="numeric"><button type="button" data-sx-qty="1" aria-label="Increase quantity"><i class="fas fa-plus" aria-hidden="true"></i></button></div>
+                                    <button type="submit" class="sx-line__btn" aria-label="Update Plum Peasant Blouse"><i class="fas fa-arrows-rotate" aria-hidden="true"></i></button>
+                                    <button type="button" class="sx-line__btn" data-sx-remove aria-label="Remove Plum Peasant Blouse"><i class="fas fa-xmark" aria-hidden="true"></i></button>
+                                </div>
+                                <p class="sx-line__unit"><span class="sx-line__lbl">Unit Price</span> $25.00</p>
+                                <p class="sx-line__total"><span class="sx-line__lbl">Total</span> $25.00</p>
+                            </article>
+                        </form>
+
+                        <div class="sx-next">
+                            <h2>What would you like to do next?</h2>
+                            <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+                            <div class="sx-acc" id="accordion">
+                                <div class="sx-acc__item">
+                                    <h4><button class="sx-acc__btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-coupon" aria-expanded="false" aria-controls="collapse-coupon">Use Coupon Code <i class="fas fa-plus" aria-hidden="true"></i></button></h4>
+                                    <div id="collapse-coupon" class="collapse" data-bs-parent="#accordion">
+                                        <form class="sx-acc__body sx-inline-form" data-sx-form novalidate>
+                                            <label for="input-coupon">Enter your coupon code</label>
+                                            <div class="sx-inline-form__row">
+                                                <input class="sx-input" type="text" name="coupon" id="input-coupon" placeholder="Enter your coupon here" required>
+                                                <button type="submit" id="button-coupon" class="sx-btn sx-btn--sm">Apply Coupon</button>
+                                            </div>
+                                            <p class="sx-form-note sx-form-note--ok" role="status" tabindex="-1" hidden><i class="fas fa-circle-check" aria-hidden="true"></i> Coupon applied — your discount shows at checkout.</p>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="sx-acc__item">
+                                    <h4><button class="sx-acc__btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-voucher" aria-expanded="false" aria-controls="collapse-voucher">Use Gift Certificate <i class="fas fa-plus" aria-hidden="true"></i></button></h4>
+                                    <div id="collapse-voucher" class="collapse" data-bs-parent="#accordion">
+                                        <form class="sx-acc__body sx-inline-form" data-sx-form novalidate>
+                                            <label for="input-voucher">Enter your gift certificate code here</label>
+                                            <div class="sx-inline-form__row">
+                                                <input class="sx-input" type="text" name="voucher" id="input-voucher" placeholder="Enter your gift certificate code here" required>
+                                                <button type="submit" id="button-voucher" class="sx-btn sx-btn--sm">Apply Gift Certificate</button>
+                                            </div>
+                                            <p class="sx-form-note sx-form-note--ok" role="status" tabindex="-1" hidden><i class="fas fa-circle-check" aria-hidden="true"></i> Gift certificate added to your order.</p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="sx-summary" aria-label="Order summary">
+                        <p class="sx-summary__title">Order summary</p>
+                        <dl class="sx-totals">
+                            <div><dt>Sub-Total:</dt><dd>$95.00</dd></div>
+                            <div><dt>Eco Tax (-2.00):</dt><dd>$2.00</dd></div>
+                            <div><dt>VAT (20%):</dt><dd>$19.00</dd></div>
+                            <div class="sx-totals__grand"><dt>Total:</dt><dd>$116.00</dd></div>
+                        </dl>
+                        <a href="checkout.html" class="sx-btn sx-btn--block">Checkout <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="product.html" class="sx-btn sx-btn--ghost sx-btn--block">Continue Shopping</a>
+                        <p class="sx-summary__free"><i class="fas fa-truck-fast" aria-hidden="true"></i> Free shipping unlocked — orders over $75 ship free.</p>
+                        <ul class="sx-pay sx-pay--dark" aria-label="We accept">
+                            <li><i class="fab fa-cc-visa" aria-hidden="true"></i><span class="visually-hidden">Visa</span></li>
+                            <li><i class="fab fa-cc-mastercard" aria-hidden="true"></i><span class="visually-hidden">Mastercard</span></li>
+                            <li><i class="fab fa-cc-paypal" aria-hidden="true"></i><span class="visually-hidden">PayPal</span></li>
+                            <li><i class="fab fa-cc-apple-pay" aria-hidden="true"></i><span class="visually-hidden">Apple Pay</span></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+        </main>
+            <footer class="sx-footer">
+                <section class="sx-news" id="newsletter" aria-labelledby="sx-news-title">
+                    <div class="sx-wrap sx-news__in">
+                        <div class="sx-news__copy">
+                            <p class="sx-eyebrow sx-eyebrow--light">The Stylinto list</p>
+                            <p class="sx-news__title" id="sx-news-title">New drops, early access and <em>10% off</em> your first order.</p>
+                        </div>
+                        <form class="sx-news__form" data-sx-form novalidate>
+                            <div class="sx-news__field">
+                                <label class="visually-hidden" for="sx-news-email">Email address</label>
+                                <input type="email" id="sx-news-email" name="email" placeholder="Your email address" autocomplete="email" required>
+                                <button type="submit" class="sx-btn sx-btn--accent">Subscribe</button>
+                            </div>
+                            <p class="sx-news__small">No spam — one email a week. Unsubscribe any time.</p>
+                            <p class="tv-form-note sx-form-note" role="status" tabindex="-1" hidden>You're on the list — your welcome code is on its way.</p>
+                        </form>
+                    </div>
+                </section>
+                <div class="sx-wrap sx-footer__main">
+                    <div class="sx-footer__brand">
+                        <a class="sx-footer__logo" href="index.html">Stylinto<span aria-hidden="true">.</span></a>
+                        <p>Considered clothing for women, men and children — new pieces every Friday, made to be worn for years.</p>
+                        <p class="sx-footer__contact">
+                            <a href="tel:+12025550100"><i class="fas fa-phone" aria-hidden="true"></i> +1-202-555-0100</a>
+                            <a href="mailto:hello@stylinto.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> hello@stylinto.com</a>
+                        </p>
+                        <ul class="sx-social">
+                            <li><a class="tv-nohref" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li><a class="tv-nohref" aria-label="X (Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a></li>
+                            <li><a class="tv-nohref" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a class="tv-nohref" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block sx-fcol">
+                        <h4>Information <i class="fas fa-angle-down" role="button" tabindex="0" aria-expanded="false" aria-label="Show Information links"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="faq.html#shipping">Delivery Information</a></li>
+                            <li><a href="faq.html#privacy">Privacy Policy</a></li>
+                            <li><a href="faq.html#terms">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block sx-fcol">
+                        <h4>Extras <i class="fas fa-angle-down" role="button" tabindex="0" aria-expanded="false" aria-label="Show Extras links"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="faq.html#returns">Returns</a></li>
+                            <li><a href="faq.html#sitemap">Site Map</a></li>
+                            <li><a href="size-guide.html">Size Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block sx-fcol">
+                        <h4>Service <i class="fas fa-angle-down" role="button" tabindex="0" aria-expanded="false" aria-label="Show Service links"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#brands">Brands</a></li>
+                            <li><a href="product.html">Gift Vouchers</a></li>
+                            <li><a href="contact.html">Affiliates</a></li>
+                            <li><a href="product.html">Specials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block sx-fcol">
+                        <h4>My Account <i class="fas fa-angle-down" role="button" tabindex="0" aria-expanded="false" aria-label="Show My Account links"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="account.html#orders">Order History</a></li>
+                            <li><a href="wishlist.html">Wish List</a></li>
+                            <li><a href="#newsletter">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sx-footer__bottom">
+                    <div class="sx-wrap sx-footer__bottom-in">
+                        <p class="sx-footer__credit">
+                            © <span id="tv-year">2026</span> Stylinto. All rights reserved.
+                        </p>
+                        <ul class="sx-pay" aria-label="We accept">
+                            <li><i class="fab fa-cc-visa" aria-hidden="true"></i><span class="visually-hidden">Visa</span></li>
+                            <li><i class="fab fa-cc-mastercard" aria-hidden="true"></i><span class="visually-hidden">Mastercard</span></li>
+                            <li><i class="fab fa-cc-paypal" aria-hidden="true"></i><span class="visually-hidden">PayPal</span></li>
+                            <li><i class="fab fa-cc-apple-pay" aria-hidden="true"></i><span class="visually-hidden">Apple Pay</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="sx-footer__word" aria-hidden="true">Stylinto</p>
+            </footer>
+            <button type="button" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+
+
+        <script src="js/bootstrap.bundle.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </body>
+</html>
