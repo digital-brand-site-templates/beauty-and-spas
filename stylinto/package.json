@@ -31,5 +31,54 @@
       "logoUrl",
       "contactEmail"
     ]
+  },
+  "source": {
+    "vendor": "ThemeVault",
+    "vendorUrl": "https://www.themevault.net",
+    "templateName": "Stylinto",
+    "originalPackage": "fashion-and-beauty-stylinto.zip",
+    "originalSha256": "d8ee190909d30e3a790961a44bdf104f9049959cc015c82e645c3d5f45bb1ffe",
+    "downloadHistory": [
+      {
+        "date": "2026-10-28T10:21:04-04:00",
+        "orderNumber": "TVORD56531616",
+        "file": "fashion-and-beauty-stylinto.zip",
+        "retrievedFrom": "ThemeVault account download"
+      }
+    ],
+    "licenseHistory": [
+      {
+        "orderNumber": "TVORD56531616",
+        "purchaseDate": "2026-10-28T14:20:52Z",
+        "amount": 0.0,
+        "currency": "USD",
+        "receiptNumber": null,
+        "licenseType": "Template download (standard package)",
+        "creditRemovalPermitted": true,
+        "evidence": "Your ThemeVault order TVORD56531616 (email dated 2026-10-28T14:20:52Z)"
+      },
+      {
+        "orderNumber": "TVORD30331596",
+        "purchaseDate": "2026-10-27T18:24:00Z",
+        "orderCreated": "2026-10-27T18:20:00Z",
+        "amount": 129.0,
+        "currency": "USD",
+        "receiptNumber": null,
+        "paymentReferenceNumber": "69F57224VW8877631",
+        "paypalTransactionId": "2G4401177R3504237",
+        "paymentMethod": "PayPal",
+        "licenseType": "Pro \u2014 Lifetime",
+        "scope": "account-wide plan; the proof does not name specific templates",
+        "creditRemovalPermitted": null,
+        "evidence": "Email 'Fwd: Your ThemeVault order TVORD30331596' from danummer@gmail.com, received 2026-10-28T16:54Z (original 2026-10-27 2:24 PM EDT), with attachment 'ThemeVault License.pdf' (order page printout, 10/28/26)"
+      }
+    ],
+    "modifications": [
+      "Removed ThemeVault footer credit and backlink comment",
+      "Added preview.png, package.json, AGENTS.md"
+    ],
+    "missing": [
+      "receiptNumber (ThemeVault emails/PDF show no receipt number; see paymentReferenceNumber)"
+    ]
   }
 }

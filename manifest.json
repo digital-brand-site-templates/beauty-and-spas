@@ -17,7 +17,15 @@
         "logoUrl",
         "bookingEmail"
       ],
-      "preview": "beautica/preview.png"
+      "preview": "beautica/preview.png",
+      "orderNumber": "TVORD47631617",
+      "license": {
+        "templateOrderAmount": 0.0,
+        "creditRemovalPermitted": true,
+        "accountLicense": [
+          "TVORD30331596 Pro \u2014 Lifetime"
+        ]
+      }
     },
     {
       "name": "Beautilicious",
@@ -35,7 +43,15 @@
         "logoUrl",
         "appointmentEmail"
       ],
-      "preview": "beautilicious/preview.png"
+      "preview": "beautilicious/preview.png",
+      "orderNumber": "TVORD47631619",
+      "license": {
+        "templateOrderAmount": 0.0,
+        "creditRemovalPermitted": true,
+        "accountLicense": [
+          "TVORD30331596 Pro \u2014 Lifetime"
+        ]
+      }
     },
     {
       "name": "Spacelon",
@@ -53,7 +69,15 @@
         "logoUrl",
         "appointmentEmail"
       ],
-      "preview": "spacelon/preview.png"
+      "preview": "spacelon/preview.png",
+      "orderNumber": "TVORD11931618",
+      "license": {
+        "templateOrderAmount": 0.0,
+        "creditRemovalPermitted": true,
+        "accountLicense": [
+          "TVORD30331596 Pro \u2014 Lifetime"
+        ]
+      }
     },
     {
       "name": "Stylinto",
@@ -71,7 +95,15 @@
         "logoUrl",
         "contactEmail"
       ],
-      "preview": "stylinto/preview.png"
+      "preview": "stylinto/preview.png",
+      "orderNumber": "TVORD56531616",
+      "license": {
+        "templateOrderAmount": 0.0,
+        "creditRemovalPermitted": true,
+        "accountLicense": [
+          "TVORD30331596 Pro \u2014 Lifetime"
+        ]
+      }
     },
     {
       "name": "Timecenter",
@@ -89,7 +121,15 @@
         "logoUrl",
         "contactEmail"
       ],
-      "preview": "timecenter/preview.png"
+      "preview": "timecenter/preview.png",
+      "orderNumber": "TVORD44331605",
+      "license": {
+        "templateOrderAmount": 0.0,
+        "creditRemovalPermitted": true,
+        "accountLicense": [
+          "TVORD30331596 Pro \u2014 Lifetime"
+        ]
+      }
     }
   ]
 }
