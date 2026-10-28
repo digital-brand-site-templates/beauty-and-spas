@@ -1,5 +1,5 @@
 {
-  "name": "tpl-fashion-and-beauty-beaut-ica",
+  "name": "tpl-beauty-and-spas-beaut-ica",
   "version": "2.0.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "node": ">=22.0.0"
   },
   "agentMeta": {
-    "category": "fashion-and-beauty",
+    "category": "beauty-and-spas",
     "idealFor": [
       "beauty salons",
       "hair stylists",

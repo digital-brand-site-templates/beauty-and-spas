@@ -1,11 +1,11 @@
 {
-  "category": "fashion-and-beauty",
+  "category": "beauty-and-spas",
   "templates": [
     {
       "name": "Beaut-ica",
       "folder": "beaut-ica",
       "version": "2.0.0",
-      "description": "Beaut-ica \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "description": "Beaut-ica \u2013 static HTML/Bootstrap Beauty & Spas website template.",
       "idealFor": [
         "beauty salons",
         "hair stylists",
@@ -31,7 +31,7 @@
       "name": "Beauti-licious",
       "folder": "beauti-licious",
       "version": "2.0.0",
-      "description": "Beauti-licious \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "description": "Beauti-licious \u2013 static HTML/Bootstrap Beauty & Spas website template.",
       "idealFor": [
         "day spas",
         "beauty salons",
@@ -57,7 +57,7 @@
       "name": "Space-lon",
       "folder": "space-lon",
       "version": "2.0.0",
-      "description": "Space-lon \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "description": "Space-lon \u2013 static HTML/Bootstrap Beauty & Spas website template.",
       "idealFor": [
         "beauty salons",
         "day spas",
@@ -71,58 +71,6 @@
       ],
       "preview": "space-lon/preview.png",
       "orderNumber": "TVORD11931618",
-      "license": {
-        "templateOrderAmount": 0.0,
-        "creditRemovalPermitted": true,
-        "accountLicense": [
-          "TVORD30331596 Pro \u2014 Lifetime"
-        ]
-      }
-    },
-    {
-      "name": "Styl-into",
-      "folder": "styl-into",
-      "version": "2.0.0",
-      "description": "Styl-into \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
-      "idealFor": [
-        "fashion boutiques",
-        "online clothing stores",
-        "apparel brands"
-      ],
-      "requiredClientInputs": [
-        "storeName",
-        "primaryColorHex",
-        "logoUrl",
-        "contactEmail"
-      ],
-      "preview": "styl-into/preview.png",
-      "orderNumber": "TVORD56531616",
-      "license": {
-        "templateOrderAmount": 0.0,
-        "creditRemovalPermitted": true,
-        "accountLicense": [
-          "TVORD30331596 Pro \u2014 Lifetime"
-        ]
-      }
-    },
-    {
-      "name": "Time-center",
-      "folder": "time-center",
-      "version": "2.0.0",
-      "description": "Time-center \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
-      "idealFor": [
-        "watch retailers",
-        "jewelry stores",
-        "luxury accessory boutiques"
-      ],
-      "requiredClientInputs": [
-        "storeName",
-        "primaryColorHex",
-        "logoUrl",
-        "contactEmail"
-      ],
-      "preview": "time-center/preview.png",
-      "orderNumber": "TVORD44331605",
       "license": {
         "templateOrderAmount": 0.0,
         "creditRemovalPermitted": true,
