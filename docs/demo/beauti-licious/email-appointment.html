@@ -1,0 +1,193 @@
+<!--
+Template Name: Beauti-licious
+File Name: email-appointment.html — the HTML email
+Author Name: ThemeVault
+Author URI: https://www.themevault.net/
+Licence URI: https://www.themevault.net/license/
+Version: 2.0
+
+HOW TO USE: this file is an email, not a web page. Before sending, replace
+"images/logo.png" and "images/about.png" with the absolute URLs of the
+images on your server (mail clients cannot load a relative path), put your
+links in place of the "#" hrefs and the placeholder values ({{name}},
+{{service}}, {{stylist}}, {{date}}, {{time}}, {{price}}, {{email}}) with
+your mailer's variables. Everything is inline-styled and table-based so it
+renders in Gmail, Outlook, Apple Mail and on phones.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><meta name="robots" content="noindex, nofollow, noarchive">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>Your appointment is confirmed</title>
+  <!--[if mso]>
+  <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+  <style>table, td { font-family: Arial, Helvetica, sans-serif !important; }</style>
+  <![endif]-->
+  <style>
+    body { margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table { border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; }
+    img { -ms-interpolation-mode: bicubic; }
+    a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; }
+    @media only screen and (max-width: 620px) {
+      .wrap { width: 100% !important; }
+      .pad { padding-left: 20px !important; padding-right: 20px !important; }
+      .stack { display: block !important; width: 100% !important; box-sizing: border-box; }
+      .hero-title { font-size: 24px !important; line-height: 30px !important; }
+      .step { padding-bottom: 26px !important; }
+      .btn-cell { display: block !important; width: 100% !important; box-sizing: border-box; }
+      .btn-cell a { display: block !important; padding-left: 10px !important; padding-right: 10px !important; letter-spacing: 2px !important; }
+      .btn-gap { display: block !important; width: 100% !important; height: 12px; font-size: 0; line-height: 0; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f4f4;">
+  <div style="display:none; max-height:0; overflow:hidden; mso-hide:all; font-size:1px; line-height:1px; color:#f4f4f4;">{{service}} with {{stylist}} on {{date}} at {{time}} — see you then.</div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f4f4f4" style="background-color:#f4f4f4;">
+    <tr>
+      <td align="center" style="padding:30px 10px;">
+
+        <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+        <table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background-color:#ffffff;">
+
+          <!-- header: the charcoal bar with the logo, as the site's -->
+          <tr>
+            <td align="center" bgcolor="#2b2d2d" style="background-color:#2b2d2d; padding:22px 40px; border-bottom:3px solid #e1a629;">
+              <img src="images/logo.png" width="90" alt="Beauti-licious" style="display:block; width:90px; height:auto; border:0;">
+            </td>
+          </tr>
+          <!-- photograph -->
+          <tr>
+            <td style="padding:0; line-height:0;">
+              <img src="images/about.png" width="600" alt="" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
+            </td>
+          </tr>
+          <!-- the title band -->
+          <tr>
+            <td align="center" style="padding:32px 40px 6px;">
+              <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:11px; line-height:16px; font-weight:bold; letter-spacing:4px; text-transform:uppercase; color:#e1a629; text-align:center; padding-bottom:8px;">Confirmed</p>
+              <p class="hero-title" style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:28px; line-height:34px; font-weight:bold; letter-spacing:3px; text-transform:uppercase; color:#2b2d2d; text-align:center;">Your appointment</p>
+            </td>
+          </tr>
+
+          <!-- body -->
+          <tr>
+            <td class="pad" style="padding:16px 40px 10px;">
+              <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-weight:bold; color:#2b2d2d; padding-bottom:12px;">Hi {{name}},</p>
+              <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; padding-bottom:6px;">Thank you — your chair is booked. Here is what we have down for you. If anything is wrong, reply to this email or call the desk and we will sort it out.</p>
+            </td>
+          </tr>
+
+          <!-- the booking card -->
+          <tr>
+            <td class="pad" style="padding:14px 40px 10px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f7f7f7" style="background-color:#f7f7f7; border-top:3px solid #e1a629;">
+                <tr><td style="padding:22px 24px 14px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                  <td style="padding:10px 0; border-bottom:1px solid #e5e5e5; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:11px; line-height:18px; letter-spacing:2px; text-transform:uppercase; color:#777777;">Treatment</td>
+                  <td align="right" style="padding:10px 0; border-bottom:1px solid #e5e5e5; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:18px; font-weight:bold; color:#2b2d2d;">{{service}}</td>
+                </tr>
+                    <tr>
+                  <td style="padding:10px 0; border-bottom:1px solid #e5e5e5; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:11px; line-height:18px; letter-spacing:2px; text-transform:uppercase; color:#777777;">With</td>
+                  <td align="right" style="padding:10px 0; border-bottom:1px solid #e5e5e5; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:18px; font-weight:bold; color:#2b2d2d;">{{stylist}}</td>
+                </tr>
+                    <tr>
+                  <td style="padding:10px 0; border-bottom:1px solid #e5e5e5; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:11px; line-height:18px; letter-spacing:2px; text-transform:uppercase; color:#777777;">Date</td>
+                  <td align="right" style="padding:10px 0; border-bottom:1px solid #e5e5e5; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:18px; font-weight:bold; color:#2b2d2d;">{{date}}</td>
+                </tr>
+                    <tr>
+                  <td style="padding:10px 0; border-bottom:1px solid #e5e5e5; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:11px; line-height:18px; letter-spacing:2px; text-transform:uppercase; color:#777777;">Time</td>
+                  <td align="right" style="padding:10px 0; border-bottom:1px solid #e5e5e5; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:18px; font-weight:bold; color:#2b2d2d;">{{time}}</td>
+                </tr>
+                    <tr>
+                  <td style="padding:10px 0; border-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:11px; line-height:18px; letter-spacing:2px; text-transform:uppercase; color:#777777;">Price</td>
+                  <td align="right" style="padding:10px 0; border-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:18px; font-weight:bold; color:#2b2d2d;">{{price}}</td>
+                </tr>
+                  </table>
+                  <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:13px; line-height:20px; color:#777777; padding-top:10px;">Paid at the desk after your visit — card or cash. First-time clients get 10% off.</p>
+                </td></tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- what happens next, as the appointment page's three steps -->
+          <tr>
+            <td class="pad" style="padding:26px 34px 10px;">
+              <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:11px; line-height:16px; font-weight:bold; letter-spacing:4px; text-transform:uppercase; color:#e1a629; text-align:center; padding:0 6px 16px;">Before you come</p>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="stack step" width="33%" valign="top" style="padding:0 6px 12px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr><td align="center" style="padding:0 0 8px;">
+                        <span style="display:inline-block; width:36px; height:36px; line-height:36px; border:1px solid #e1a629; border-radius:18px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; font-weight:bold; color:#e1a629; text-align:center;">1</span>
+                      </td></tr>
+                      <tr><td align="center">
+                        <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:12px; line-height:18px; font-weight:bold; letter-spacing:2px; text-transform:uppercase; color:#2b2d2d; text-align:center; padding-bottom:4px;">Arrive early</p>
+                        <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:13px; line-height:20px; color:#777777; text-align:center;">Ten minutes, for a quick consultation and a cup of tea in the lounge.</p>
+                      </td></tr>
+                    </table>
+                  </td>
+                  <td class="stack step" width="33%" valign="top" style="padding:0 6px 12px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr><td align="center" style="padding:0 0 8px;">
+                        <span style="display:inline-block; width:36px; height:36px; line-height:36px; border:1px solid #e1a629; border-radius:18px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; font-weight:bold; color:#e1a629; text-align:center;">2</span>
+                      </td></tr>
+                      <tr><td align="center">
+                        <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:12px; line-height:18px; font-weight:bold; letter-spacing:2px; text-transform:uppercase; color:#2b2d2d; text-align:center; padding-bottom:4px;">Tell us</p>
+                        <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:13px; line-height:20px; color:#777777; text-align:center;">Allergies, a photo reference, anything that changed since you booked.</p>
+                      </td></tr>
+                    </table>
+                  </td>
+                  <td class="stack step" width="33%" valign="top" style="padding:0 6px 12px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr><td align="center" style="padding:0 0 8px;">
+                        <span style="display:inline-block; width:36px; height:36px; line-height:36px; border:1px solid #e1a629; border-radius:18px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; font-weight:bold; color:#e1a629; text-align:center;">3</span>
+                      </td></tr>
+                      <tr><td align="center">
+                        <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:12px; line-height:18px; font-weight:bold; letter-spacing:2px; text-transform:uppercase; color:#2b2d2d; text-align:center; padding-bottom:4px;">Need to move it?</p>
+                        <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:13px; line-height:20px; color:#777777; text-align:center;">Change or cancel up to 24 hours ahead at no charge.</p>
+                      </td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- buttons -->
+          <tr>
+            <td align="center" style="padding:20px 40px 34px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="btn-cell" align="center" width="50%" bgcolor="#e1a629" style="background-color:#e1a629;">
+                    <a href="#" style="display:inline-block; padding:14px 20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:20px; font-weight:bold; letter-spacing:3px; text-transform:uppercase; color:#2b2d2d; text-decoration:none;">Add to calendar</a>
+                  </td>
+                  <td class="btn-gap" style="width:12px;"></td>
+                  <td class="btn-cell" align="center" width="50%" style="border:1px solid #2b2d2d;">
+                    <a href="#" style="display:inline-block; padding:13px 20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:20px; font-weight:bold; letter-spacing:3px; text-transform:uppercase; color:#2b2d2d; text-decoration:none;">Change it</a>
+                  </td>
+                </tr>
+              </table>
+              <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:13px; line-height:20px; color:#777777; padding-top:18px; text-align:center;">Open Monday to Friday 8am – 10pm, Saturday 8am – 5pm, Sunday closed. 701 Old York Drive, Richmond · <a href="tel:+1-202-555-0100" style="color:#2b2d2d; text-decoration:none;">+1-202-555-0100</a></p>
+            </td>
+          </tr>
+
+          <!-- footer -->
+          <tr>
+            <td align="center" bgcolor="#2b2d2d" style="background-color:#2b2d2d; padding:24px 40px;">
+              <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:12px; line-height:19px; color:#bbbbbb; text-align:center;">Sent to {{email}} because you booked an appointment with us.</p>
+              <p style="margin:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; color:#333333; font-size:12px; line-height:19px; color:#bbbbbb; text-align:center; padding-top:6px;">&copy; 2017 All right reserved.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

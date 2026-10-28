@@ -8,8 +8,8 @@ Static website templates for the Fashion & Beauty category.
 
 Preview gallery: https://digital-brand-site-templates.github.io/fashion-and-beauty/
 
-- [Beautica](beautica/)
-- [Beautilicious](beautilicious/)
-- [Spacelon](spacelon/)
-- [Stylinto](stylinto/)
-- [Timecenter](timecenter/)
+- [Beaut-ica](beaut-ica/)
+- [Beauti-licious](beauti-licious/)
+- [Space-lon](space-lon/)
+- [Styl-into](styl-into/)
+- [Time-center](time-center/)

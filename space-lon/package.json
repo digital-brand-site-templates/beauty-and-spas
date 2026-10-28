@@ -1,0 +1,85 @@
+{
+  "name": "tpl-fashion-and-beauty-space-lon",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve src",
+    "build": "echo static site, no build step",
+    "verify": "echo static site, nothing to verify"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "agentMeta": {
+    "category": "fashion-and-beauty",
+    "idealFor": [
+      "beauty salons",
+      "day spas",
+      "barbershops"
+    ],
+    "buildOutputDir": "src",
+    "customizationMap": {
+      "themeColors": "src/css/style.css",
+      "siteMetadata": "src/index.html (<head> title and meta tags)",
+      "navigation": "src/index.html (<header>/<nav> block, repeated in each page)",
+      "pagesDir": "src"
+    },
+    "requiredClientInputs": [
+      "salonName",
+      "primaryColorHex",
+      "logoUrl",
+      "appointmentEmail"
+    ]
+  },
+  "source": {
+    "vendor": "ThemeVault",
+    "vendorUrl": "https://www.themevault.net",
+    "templateName": "Spacelon",
+    "originalPackage": "fashion-and-beauty-spacelon.zip",
+    "originalSha256": "44aaec0c1da8309149cdd04ef3fed38cfd398eeb8df82280c4ec98160b287bcb",
+    "downloadHistory": [
+      {
+        "date": "2026-10-28T12:03:16-04:00",
+        "orderNumber": "TVORD11931618",
+        "file": "fashion-and-beauty-spacelon.zip",
+        "retrievedFrom": "ThemeVault account download"
+      }
+    ],
+    "licenseHistory": [
+      {
+        "orderNumber": "TVORD11931618",
+        "purchaseDate": "2026-10-28T14:27:48Z",
+        "amount": 0.0,
+        "currency": "USD",
+        "receiptNumber": null,
+        "licenseType": "Template download (standard package)",
+        "creditRemovalPermitted": true,
+        "evidence": "Your ThemeVault order TVORD11931618 (email dated 2026-10-28T14:27:48Z)"
+      },
+      {
+        "orderNumber": "TVORD30331596",
+        "purchaseDate": "2026-10-27T18:24:00Z",
+        "orderCreated": "2026-10-27T18:20:00Z",
+        "amount": 129.0,
+        "currency": "USD",
+        "receiptNumber": null,
+        "paymentReferenceNumber": "69F57224VW8877631",
+        "paypalTransactionId": "2G4401177R3504237",
+        "paymentMethod": "PayPal",
+        "licenseType": "Pro \u2014 Lifetime",
+        "scope": "account-wide plan; the proof does not name specific templates",
+        "creditRemovalPermitted": null,
+        "evidence": "Email 'Fwd: Your ThemeVault order TVORD30331596' from danummer@gmail.com, received 2026-10-28T16:54Z (original 2026-10-27 2:24 PM EDT), with attachment 'ThemeVault License.pdf' (order page printout, 10/28/26)"
+      }
+    ],
+    "modifications": [
+      "Removed ThemeVault footer credit and backlink comment",
+      "Added preview.png, package.json, AGENTS.md"
+    ],
+    "missing": [
+      "receiptNumber (ThemeVault emails/PDF show no receipt number; see paymentReferenceNumber)"
+    ],
+    "originalTemplateName": "Spacelon"
+  }
+}

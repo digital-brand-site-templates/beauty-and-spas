@@ -2,10 +2,10 @@
   "category": "fashion-and-beauty",
   "templates": [
     {
-      "name": "Beautica",
-      "folder": "beautica",
+      "name": "Beaut-ica",
+      "folder": "beaut-ica",
       "version": "2.0.0",
-      "description": "Beautica \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "description": "Beaut-ica \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
       "idealFor": [
         "beauty salons",
         "hair stylists",
@@ -17,7 +17,7 @@
         "logoUrl",
         "bookingEmail"
       ],
-      "preview": "beautica/preview.png",
+      "preview": "beaut-ica/preview.png",
       "orderNumber": "TVORD47631617",
       "license": {
         "templateOrderAmount": 0.0,
@@ -28,10 +28,10 @@
       }
     },
     {
-      "name": "Beautilicious",
-      "folder": "beautilicious",
+      "name": "Beauti-licious",
+      "folder": "beauti-licious",
       "version": "2.0.0",
-      "description": "Beautilicious \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "description": "Beauti-licious \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
       "idealFor": [
         "day spas",
         "beauty salons",
@@ -43,7 +43,7 @@
         "logoUrl",
         "appointmentEmail"
       ],
-      "preview": "beautilicious/preview.png",
+      "preview": "beauti-licious/preview.png",
       "orderNumber": "TVORD47631619",
       "license": {
         "templateOrderAmount": 0.0,
@@ -54,10 +54,10 @@
       }
     },
     {
-      "name": "Spacelon",
-      "folder": "spacelon",
+      "name": "Space-lon",
+      "folder": "space-lon",
       "version": "2.0.0",
-      "description": "Spacelon \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "description": "Space-lon \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
       "idealFor": [
         "beauty salons",
         "day spas",
@@ -69,7 +69,7 @@
         "logoUrl",
         "appointmentEmail"
       ],
-      "preview": "spacelon/preview.png",
+      "preview": "space-lon/preview.png",
       "orderNumber": "TVORD11931618",
       "license": {
         "templateOrderAmount": 0.0,
@@ -80,10 +80,10 @@
       }
     },
     {
-      "name": "Stylinto",
-      "folder": "stylinto",
+      "name": "Styl-into",
+      "folder": "styl-into",
       "version": "2.0.0",
-      "description": "Stylinto \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "description": "Styl-into \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
       "idealFor": [
         "fashion boutiques",
         "online clothing stores",
@@ -95,7 +95,7 @@
         "logoUrl",
         "contactEmail"
       ],
-      "preview": "stylinto/preview.png",
+      "preview": "styl-into/preview.png",
       "orderNumber": "TVORD56531616",
       "license": {
         "templateOrderAmount": 0.0,
@@ -106,10 +106,10 @@
       }
     },
     {
-      "name": "Timecenter",
-      "folder": "timecenter",
+      "name": "Time-center",
+      "folder": "time-center",
       "version": "2.0.0",
-      "description": "Timecenter \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
+      "description": "Time-center \u2013 static HTML/Bootstrap Fashion & Beauty website template.",
       "idealFor": [
         "watch retailers",
         "jewelry stores",
@@ -121,7 +121,7 @@
         "logoUrl",
         "contactEmail"
       ],
-      "preview": "timecenter/preview.png",
+      "preview": "time-center/preview.png",
       "orderNumber": "TVORD44331605",
       "license": {
         "templateOrderAmount": 0.0,

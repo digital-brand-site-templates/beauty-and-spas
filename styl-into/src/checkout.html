@@ -1,0 +1,475 @@
+<!--
+Template Name: Styl-Into
+File Name: checkout.html
+Author Name: ThemeVault
+Author URI: https://www.themevault.net/
+License URI: https://www.themevault.net/license/
+Version: 2.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Styl-Into</title>
+        <meta name="description" content="Secure checkout at Styl-into.">
+        <link rel="icon" href="images/favicon.png"/>
+
+        <!-- Bootstrap 5, Font Awesome 6, then v1's own stylesheets in v1's order -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bs3-defaults.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <link href="css/bs5-shim.css" rel="stylesheet">
+        <link href="css/_modern.css" rel="stylesheet">
+        <link href="css/design.css" rel="stylesheet">
+    </head>
+    <body class="tv-preload">
+
+        <a class="visually-hidden-focusable sx-skip" href="#sx-main">Skip to content</a>
+        <div class="sx-topbar">
+            <div class="sx-wrap sx-topbar__in">
+                <div class="sx-topbar__left">
+                    <a class="sx-topbar__phone" href="tel:+12025550100"><i class="fas fa-phone" aria-hidden="true"></i> +1-202-555-0100</a>
+                    <ul class="sx-social sx-social--top">
+                        <li><a class="tv-nohref" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a class="tv-nohref" aria-label="X (Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a></li>
+                        <li><a class="tv-nohref" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a class="tv-nohref" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <p class="sx-topbar__msg">Free shipping on orders over $75 &nbsp;·&nbsp; 30-day easy returns</p>
+                <div class="sx-topbar__right">
+                    <div class="dropdown sx-pick">
+                        <button type="button" class="sx-pick__btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">English</button>
+                        <ul class="dropdown-menu dropdown-menu-end sx-menu">
+                            <li><a class="tv-nohref dropdown-item">Chinese</a></li>
+                            <li><a class="tv-nohref dropdown-item">French</a></li>
+                            <li><a class="tv-nohref dropdown-item">Spanish</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown sx-pick">
+                        <button type="button" class="sx-pick__btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Rupees</button>
+                        <ul class="dropdown-menu dropdown-menu-end sx-menu">
+                            <li><a class="tv-nohref dropdown-item">US Dollar</a></li>
+                            <li><a class="tv-nohref dropdown-item">Rupees</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="sx-header sticky-top" id="sx-header">
+            <div class="sx-wrap sx-header__in">
+                <button type="button" class="navbar-toggler sx-burger" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="sx-nav" aria-label="Main">
+                    <div class="collapse navbar-collapse sx-nav__panel" id="myNavbar">
+                        <form class="sx-search sx-search--panel" role="search" action="product.html">
+                            <label class="visually-hidden" for="sx-search-m">Search</label>
+                            <input type="search" id="sx-search-m" name="search" placeholder="Search dresses, denim, knits…">
+                            <button type="submit" aria-label="Search"><i class="fas fa-magnifying-glass" aria-hidden="true"></i></button>
+                        </form>
+                        <ul class="navbar-nav sx-nav__list">
+                            <li class="nav-item dropdown sx-cat">
+                                <button type="button" class="nav-link sx-cat__btn" data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-display="static" aria-expanded="false">
+                                    <i class="fas fa-bars-staggered" aria-hidden="true"></i> Category
+                                </button>
+                                <div class="dropdown-menu sx-mega mega-menu">
+                                    <div class="box-category sx-mega__list">
+                                        <p class="sx-eyebrow">Shop by category</p>
+                                        <ul class="menu">
+                                            <li><a href="product.html">Antic images</a></li>
+                                            <li class="sx-has-sub">
+                                                <a href="product.html">Men</a>
+                                                <i class="fas fa-plus" role="button" tabindex="0" aria-expanded="false" aria-label="Show Men categories"></i>
+                                                <ul class="menu-inner" hidden>
+                                                    <li><a href="product.html">Jeans</a></li>
+                                                    <li><a href="product.html">T-shirts</a></li>
+                                                    <li><a href="product.html">Shirts</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sx-has-sub">
+                                                <a href="product.html">Women</a>
+                                                <i class="fas fa-plus" role="button" tabindex="0" aria-expanded="false" aria-label="Show Women categories"></i>
+                                                <ul class="menu-inner" hidden>
+                                                    <li><a href="product.html">Jeans</a></li>
+                                                    <li><a href="product.html">T-shirts</a></li>
+                                                    <li><a href="product.html">Shirts</a></li>
+                                                    <li><a href="product.html">Kurtas &amp; Kurtis</a></li>
+                                                    <li><a href="product.html">Leggings</a></li>
+                                                    <li><a href="product.html">Dresses</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sx-has-sub">
+                                                <a href="product.html">Children</a>
+                                                <i class="fas fa-plus" role="button" tabindex="0" aria-expanded="false" aria-label="Show Children categories"></i>
+                                                <ul class="menu-inner" hidden>
+                                                    <li><a href="product.html">Frocks</a></li>
+                                                    <li><a href="product.html">Sets &amp; suits</a></li>
+                                                    <li><a href="product.html">Shirts</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a class="sx-mega__promo" href="product.html">
+                                        <img src="images/fashion1.jpg" alt="Red belted dress from the new season edit" loading="lazy">
+                                        <span><em>The new season edit</em> Shop now <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="active nav-item"><a class="nav-link active" href="checkout.html" aria-current="page">Checkout</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">My Account</a>
+                                <ul class="dropdown-menu sx-menu">
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                    <li><a class="dropdown-item" href="account.html">Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <a class="sx-logo" href="index.html" aria-label="Styl-into home">Styl-into<span aria-hidden="true">.</span></a>
+                <div class="sx-actions">
+                    <form class="sx-search sx-search--bar" role="search" action="product.html">
+                        <label class="visually-hidden" for="sx-search">Search</label>
+                        <input type="search" id="sx-search" name="search" placeholder="Search">
+                        <button type="submit" aria-label="Search"><i class="fas fa-magnifying-glass" aria-hidden="true"></i></button>
+                    </form>
+                    <a class="sx-icon sx-icon--account" href="login.html" aria-label="My account"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
+                    <a class="sx-icon" href="wishlist.html" aria-label="Wishlist"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
+                    <a class="sx-icon sx-icon--cart" href="cart.html" aria-label="Cart, 0 items"><i class="fas fa-bag-shopping" aria-hidden="true"></i><span class="sx-badge">0</span></a>
+                </div>
+            </div>
+        </header>
+        <main id="sx-main">
+            <section class="sx-pagehead ">
+                <div class="sx-wrap">
+                    <nav aria-label="Breadcrumb"><ol class="sx-crumbs"><li><a href="index.html">Home</a></li><li><a href="cart.html">Shopping cart</a></li><li aria-current="page">Checkout</li></ol></nav>
+                    <p class="sx-eyebrow">Secure checkout</p>
+                    <h2 class="sx-pagehead__title sx-cap">checkout</h2>
+                    
+                    <ol class="sx-steps" aria-label="Checkout progress"><li class="is-done">Cart</li><li class="is-current">Details</li><li>Delivery</li><li>Payment</li></ol>
+                </div>
+            </section>
+
+            <section class="sx-checkout">
+                <div class="sx-wrap sx-cart__in">
+                    <div class="sx-steps-acc" id="accordion">
+                            <div class="sx-step is-open">
+                                <h4><button class="sx-step__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-checkout-option" aria-expanded="true" aria-controls="collapse-checkout-option"><span class="sx-step__no">1</span> Step 1: Checkout Options <i class="fas fa-angle-down" aria-hidden="true"></i></button></h4>
+                                <div id="collapse-checkout-option" class="collapse show" data-bs-parent="#accordion">
+                                    <div class="sx-step__body">
+                                        <div class="sx-step__split">
+                                            <div>
+                                                <h2>New Customer</h2>
+                                                <p><strong>Checkout Options:</strong></p>
+                                                <label class="sx-radio"><input type="radio" name="account" value="register" checked> <span>Register Account</span></label>
+                                                <label class="sx-radio"><input type="radio" name="account" value="guest"> <span>Guest Checkout</span></label>
+                                                <p class="sx-muted">By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+                                                <div class="sx-step__foot"><button type="button" class="sx-btn" id="button-account" data-sx-next="#collapse-payment-address">Continue <i class="fas fa-arrow-right" aria-hidden="true"></i></button></div>
+                                            </div>
+                                            <div>
+                                                <h2>Returning Customer</h2>
+                                                <p><strong>I am a returning customer</strong></p>
+                                                <div class="sx-form-grid">
+                            <div class="sx-field sx-field--full">
+                                <label for="input-email">E-Mail</label>
+                                <input class="sx-input" type="email" id="input-email" name="email" autocomplete="email">
+                            </div>
+                            <div class="sx-field sx-field--full">
+                                <label for="input-password">Password</label>
+                                <input class="sx-input" type="password" id="input-password" name="password" autocomplete="current-password">
+                            </div>
+                        </div>
+                                                <p class="sx-forgot"><a href="forgot-password.html">Forgotten Password</a></p>
+                                                <a class="sx-btn sx-btn--ghost" id="button-login" href="account.html">Login</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sx-step">
+                                <h4><button class="sx-step__btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-payment-address" aria-expanded="false" aria-controls="collapse-payment-address"><span class="sx-step__no">2</span> Step 2: Account &amp; Billing Details <i class="fas fa-angle-down" aria-hidden="true"></i></button></h4>
+                                <div id="collapse-payment-address" class="collapse" data-bs-parent="#accordion">
+                                    <div class="sx-step__body">
+                                        <fieldset class="sx-fieldset"><legend>Your Personal Details</legend>
+                                            <input type="hidden" name="customer_group_id" value="1">
+                                            <div class="sx-form-grid">
+                            <div class="sx-field">
+                                <label for="input-payment-firstname">First Name <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="text" id="input-payment-firstname" name="firstname" autocomplete="given-name" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-payment-lastname">Last Name <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="text" id="input-payment-lastname" name="lastname" autocomplete="family-name" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-payment-email">E-Mail <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="email" id="input-payment-email" name="email" autocomplete="email" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-payment-telephone">Telephone <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="tel" id="input-payment-telephone" name="telephone" autocomplete="tel" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-payment-fax">Fax</label>
+                                <input class="sx-input" type="text" id="input-payment-fax" name="fax">
+                            </div>
+                        </div>
+                                        </fieldset>
+                                        <fieldset class="sx-fieldset"><legend>Your Password</legend>
+                                            <div class="sx-form-grid">
+                            <div class="sx-field">
+                                <label for="input-payment-password">Password <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="password" id="input-payment-password" name="password" autocomplete="new-password" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-payment-confirm">Password Confirm <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="password" id="input-payment-confirm" name="confirm" autocomplete="new-password" required>
+                            </div>
+                        </div>
+                                        </fieldset>
+                                        <fieldset class="sx-fieldset"><legend>Your Address</legend>
+                                            <div class="sx-form-grid">
+                            <div class="sx-field">
+                                <label for="input-payment-company">Company</label>
+                                <input class="sx-input" type="text" id="input-payment-company" name="company" autocomplete="organization">
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-payment-address-1">Address 1 <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="text" id="input-payment-address-1" name="address_1" autocomplete="address-line1" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-payment-address-2">Address 2</label>
+                                <input class="sx-input" type="text" id="input-payment-address-2" name="address_2" autocomplete="address-line2">
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-payment-city">City <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="text" id="input-payment-city" name="city" autocomplete="address-level2" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-payment-postcode">Post Code <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="text" id="input-payment-postcode" name="postcode" autocomplete="postal-code" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-payment-country">Country <span class="sx-req" aria-hidden="true">*</span></label>
+                                <select class="sx-input" id="input-payment-country" name="country_id" required><option value="">--- Please Select ---</option><option value="1">India</option><option value="2">U.K</option><option value="3">U.S.A</option><option value="4">Japan</option><option value="5">Malaysia</option></select>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-payment-zone">Region / State <span class="sx-req" aria-hidden="true">*</span></label>
+                                <select class="sx-input" id="input-payment-zone" name="zone_id" required><option value="">--- Please Select ---</option><option value="3513">Gujarat</option><option value="3514">Manchester</option><option value="3515">New Jersey</option><option value="3516">Tokyo</option><option value="3517">Johor</option></select>
+                            </div>
+                        </div>
+                                        </fieldset>
+                                        <label class="sx-check"><input type="checkbox" name="newsletter" id="newsletter" value="1"> <span>I wish to subscribe to the Styl-into newsletter.</span></label>
+                                        <label class="sx-check"><input type="checkbox" name="shipping_address" value="1" checked> <span>My delivery and billing addresses are the same.</span></label>
+                                        <label class="sx-check"><input type="checkbox" name="agree" value="1"> <span>I have read and agree to the <a href="faq.html#privacy">Privacy Policy</a></span></label>
+                                        <div class="sx-step__foot"><button type="button" class="sx-btn" id="button-register" data-sx-next="#collapse-shipping-address">Continue <i class="fas fa-arrow-right" aria-hidden="true"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sx-step">
+                                <h4><button class="sx-step__btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-shipping-address" aria-expanded="false" aria-controls="collapse-shipping-address"><span class="sx-step__no">3</span> Step 3: Delivery Details <i class="fas fa-angle-down" aria-hidden="true"></i></button></h4>
+                                <div id="collapse-shipping-address" class="collapse" data-bs-parent="#accordion">
+                                    <div class="sx-step__body">
+                                        <div class="sx-form-grid">
+                            <div class="sx-field">
+                                <label for="input-shipping-firstname">First Name <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="text" id="input-shipping-firstname" name="firstname" autocomplete="shipping given-name" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-shipping-lastname">Last Name <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="text" id="input-shipping-lastname" name="lastname" autocomplete="shipping family-name" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-shipping-company">Company</label>
+                                <input class="sx-input" type="text" id="input-shipping-company" name="company" autocomplete="organization">
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-shipping-address-1">Address 1 <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="text" id="input-shipping-address-1" name="address_1" autocomplete="address-line1" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-shipping-address-2">Address 2</label>
+                                <input class="sx-input" type="text" id="input-shipping-address-2" name="address_2" autocomplete="address-line2">
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-shipping-city">City <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="text" id="input-shipping-city" name="city" autocomplete="address-level2" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-shipping-postcode">Post Code <span class="sx-req" aria-hidden="true">*</span></label>
+                                <input class="sx-input" type="text" id="input-shipping-postcode" name="postcode" autocomplete="postal-code" required>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-shipping-country">Country <span class="sx-req" aria-hidden="true">*</span></label>
+                                <select class="sx-input" id="input-shipping-country" name="country_id" required><option value="">--- Please Select ---</option><option value="1">India</option><option value="2">U.K</option><option value="3">U.S.A</option><option value="4">Japan</option><option value="5">Malaysia</option></select>
+                            </div>
+                            <div class="sx-field">
+                                <label for="input-shipping-zone">Region / State <span class="sx-req" aria-hidden="true">*</span></label>
+                                <select class="sx-input" id="input-shipping-zone" name="zone_id" required><option value="">--- Please Select ---</option><option value="3513">Gujarat</option><option value="3514">Manchester</option><option value="3515">New Jersey</option><option value="3516">Tokyo</option><option value="3517">Johor</option></select>
+                            </div>
+                        </div>
+                                        <div class="sx-step__foot"><button type="button" class="sx-btn" id="button-guest-shipping" data-sx-next="#collapse-shipping-method">Continue <i class="fas fa-arrow-right" aria-hidden="true"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sx-step">
+                                <h4><button class="sx-step__btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-shipping-method" aria-expanded="false" aria-controls="collapse-shipping-method"><span class="sx-step__no">4</span> Step 4: Delivery Method <i class="fas fa-angle-down" aria-hidden="true"></i></button></h4>
+                                <div id="collapse-shipping-method" class="collapse" data-bs-parent="#accordion">
+                                    <div class="sx-step__body">
+                                        <p>Please select the preferred shipping method to use on this order.</p>
+                                        <label class="sx-option"><input type="radio" name="shipping_method" value="flat.flat" checked> <span><strong>Flat Rate</strong> Standard delivery, 3–5 working days</span> <b>Free</b></label>
+                                        <label class="sx-option"><input type="radio" name="shipping_method" value="express.express"> <span><strong>Express</strong> Next working day, order by 2pm</span> <b>$9.00</b></label>
+                                        <div class="sx-field sx-field--full">
+                                <label for="input-comment">Add Comments About Your Order</label>
+                                <textarea class="sx-input" id="input-comment" name="comment" rows="4"></textarea>
+                            </div>
+                                        <div class="sx-step__foot"><button type="button" class="sx-btn" id="button-shipping-method" data-sx-next="#collapse-payment-method">Continue <i class="fas fa-arrow-right" aria-hidden="true"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sx-step">
+                                <h4><button class="sx-step__btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-payment-method" aria-expanded="false" aria-controls="collapse-payment-method"><span class="sx-step__no">5</span> Step 5: Payment Method <i class="fas fa-angle-down" aria-hidden="true"></i></button></h4>
+                                <div id="collapse-payment-method" class="collapse" data-bs-parent="#accordion">
+                                    <div class="sx-step__body">
+                                        <p>Please select the preferred payment method to use on this order.</p>
+                                        <label class="sx-option"><input type="radio" name="payment_method" value="cod" checked> <span><strong>Cash On Delivery</strong> Pay the courier by cash or card</span> <i class="fas fa-money-bill-wave" aria-hidden="true"></i></label>
+                                        <label class="sx-check"><input type="checkbox" name="agree" value="1"> <span>I have read and agree to the <a href="faq.html#terms">Terms &amp; Conditions</a></span></label>
+                                        <div class="sx-step__foot"><button type="button" class="sx-btn" id="button-payment-method" data-sx-next="#collapse-checkout-confirm">Continue <i class="fas fa-arrow-right" aria-hidden="true"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sx-step">
+                                <h4><button class="sx-step__btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-checkout-confirm" aria-expanded="false" aria-controls="collapse-checkout-confirm"><span class="sx-step__no">6</span> Step 6: Confirm Order <i class="fas fa-angle-down" aria-hidden="true"></i></button></h4>
+                                <div id="collapse-checkout-confirm" class="collapse" data-bs-parent="#accordion">
+                                    <div class="sx-step__body">
+                                        <div class="sx-confirm">
+                                            <div class="sx-confirm__row sx-confirm__head" aria-hidden="true"><span>Product Name</span><span>Model</span><span>Quantity</span><span>Unit Price</span><span>Total</span></div>
+                                            <div class="sx-confirm__row"><span>Girls Top <small>Size M · Sand</small></span><span>1254</span><span>2</span><span>$35.00</span><span>$70.00</span></div>
+                                            <div class="sx-confirm__row"><span>Plum Peasant Blouse <small>Size S · Plum</small></span><span>1255</span><span>1</span><span>$25.00</span><span>$25.00</span></div>
+                                        </div>
+                                        <div class="sx-step__foot"><a class="sx-btn" id="button-confirm" href="order-confirmation.html">Confirm Order <i class="fas fa-lock" aria-hidden="true"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <aside class="sx-summary" aria-label="Order summary">
+                        <p class="sx-summary__title">Your order <a href="cart.html">Edit</a></p>
+                        <ul class="sx-mini">
+                            <li><img src="images/pro4.jpg" alt="" width="260" height="280"><span>Girls Top <small>Size M · Qty 2</small></span><b>$70.00</b></li>
+                            <li><img src="images/pro7.jpg" alt="" width="260" height="280"><span>Plum Peasant Blouse <small>Size S · Qty 1</small></span><b>$25.00</b></li>
+                        </ul>
+                        <dl class="sx-totals">
+                            <div><dt>Sub-Total:</dt><dd>$95.00</dd></div>
+                            <div><dt>Flat Shipping Rate:</dt><dd>Free</dd></div>
+                            <div><dt>Eco Tax (-2.00):</dt><dd>$2.00</dd></div>
+                            <div><dt>VAT (20%):</dt><dd>$19.00</dd></div>
+                            <div class="sx-totals__grand"><dt>Total:</dt><dd>$116.00</dd></div>
+                        </dl>
+                        <p class="sx-summary__free"><i class="fas fa-lock" aria-hidden="true"></i> Secure checkout — your details are encrypted.</p>
+                    </aside>
+                </div>
+            </section>
+        </main>
+            <footer class="sx-footer">
+                <section class="sx-news" id="newsletter" aria-labelledby="sx-news-title">
+                    <div class="sx-wrap sx-news__in">
+                        <div class="sx-news__copy">
+                            <p class="sx-eyebrow sx-eyebrow--light">The Styl-into list</p>
+                            <p class="sx-news__title" id="sx-news-title">New drops, early access and <em>10% off</em> your first order.</p>
+                        </div>
+                        <form class="sx-news__form" data-sx-form novalidate>
+                            <div class="sx-news__field">
+                                <label class="visually-hidden" for="sx-news-email">Email address</label>
+                                <input type="email" id="sx-news-email" name="email" placeholder="Your email address" autocomplete="email" required>
+                                <button type="submit" class="sx-btn sx-btn--accent">Subscribe</button>
+                            </div>
+                            <p class="sx-news__small">No spam — one email a week. Unsubscribe any time.</p>
+                            <p class="tv-form-note sx-form-note" role="status" tabindex="-1" hidden>You're on the list — your welcome code is on its way.</p>
+                        </form>
+                    </div>
+                </section>
+                <div class="sx-wrap sx-footer__main">
+                    <div class="sx-footer__brand">
+                        <a class="sx-footer__logo" href="index.html">Styl-into<span aria-hidden="true">.</span></a>
+                        <p>Considered clothing for women, men and children — new pieces every Friday, made to be worn for years.</p>
+                        <p class="sx-footer__contact">
+                            <a href="tel:+12025550100"><i class="fas fa-phone" aria-hidden="true"></i> +1-202-555-0100</a>
+                            <a href="mailto:hello@stylinto.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> hello@stylinto.com</a>
+                        </p>
+                        <ul class="sx-social">
+                            <li><a class="tv-nohref" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li><a class="tv-nohref" aria-label="X (Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a></li>
+                            <li><a class="tv-nohref" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a class="tv-nohref" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block sx-fcol">
+                        <h4>Information <i class="fas fa-angle-down" role="button" tabindex="0" aria-expanded="false" aria-label="Show Information links"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="faq.html#shipping">Delivery Information</a></li>
+                            <li><a href="faq.html#privacy">Privacy Policy</a></li>
+                            <li><a href="faq.html#terms">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block sx-fcol">
+                        <h4>Extras <i class="fas fa-angle-down" role="button" tabindex="0" aria-expanded="false" aria-label="Show Extras links"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="faq.html#returns">Returns</a></li>
+                            <li><a href="faq.html#sitemap">Site Map</a></li>
+                            <li><a href="size-guide.html">Size Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block sx-fcol">
+                        <h4>Service <i class="fas fa-angle-down" role="button" tabindex="0" aria-expanded="false" aria-label="Show Service links"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#brands">Brands</a></li>
+                            <li><a href="product.html">Gift Vouchers</a></li>
+                            <li><a href="contact.html">Affiliates</a></li>
+                            <li><a href="product.html">Specials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block sx-fcol">
+                        <h4>My Account <i class="fas fa-angle-down" role="button" tabindex="0" aria-expanded="false" aria-label="Show My Account links"></i></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="account.html#orders">Order History</a></li>
+                            <li><a href="wishlist.html">Wish List</a></li>
+                            <li><a href="#newsletter">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sx-footer__bottom">
+                    <div class="sx-wrap sx-footer__bottom-in">
+                        <p class="sx-footer__credit">
+                            © <span id="tv-year">2026</span> Styl-into. All rights reserved.
+                        </p>
+                        <ul class="sx-pay" aria-label="We accept">
+                            <li><i class="fab fa-cc-visa" aria-hidden="true"></i><span class="visually-hidden">Visa</span></li>
+                            <li><i class="fab fa-cc-mastercard" aria-hidden="true"></i><span class="visually-hidden">Mastercard</span></li>
+                            <li><i class="fab fa-cc-paypal" aria-hidden="true"></i><span class="visually-hidden">PayPal</span></li>
+                            <li><i class="fab fa-cc-apple-pay" aria-hidden="true"></i><span class="visually-hidden">Apple Pay</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="sx-footer__word" aria-hidden="true">Styl-into</p>
+            </footer>
+            <button type="button" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+
+
+        <script src="js/bootstrap.bundle.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </body>
+</html>
